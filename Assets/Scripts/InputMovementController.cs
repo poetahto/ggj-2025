@@ -11,7 +11,10 @@ namespace DefaultNamespace
         
         public CharacterController controller;
         public Animator animator;
-        public float speed;
+        public float moveSpeed = 0.8f;
+        public float rotateSpeed = .8f;
+
+        public Vector2 _velocity = new Vector2(0, 0);// x is rotation velocity, y is move velocity
 
         private Camera _camera;
         private Vector2 _inputDirection;
@@ -25,10 +28,10 @@ namespace DefaultNamespace
 
         private void Update()
         {
-            Vector3 velocity = new Vector3(_inputDirection.x, 0, _inputDirection.y);
-            velocity *= speed;
-            velocity = Quaternion.Euler(0, _camera.transform.forward.y, 0) * velocity;
-            controller.SimpleMove(velocity);
+            _velocity.y = Mathf.Clamp(_inputDirection.x * rotateSpeed * Time.deltaTime, -rotateSpeed, rotateSpeed);//Lmao
+            _velocity.x = Mathf.Clamp(_inputDirection.y * moveSpeed * Time.deltaTime, -moveSpeed, moveSpeed);
+            this.transform.Rotate(new Vector3(0,_velocity.y, 0));
+            controller.SimpleMove(this.transform.forward * _velocity.x);
             animator.SetFloat(MoveX, controller.velocity.x);
             animator.SetFloat(MoveY, controller.velocity.y);
         }
