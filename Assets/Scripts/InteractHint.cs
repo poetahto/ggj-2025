@@ -8,6 +8,7 @@ public class InteractHint : MonoBehaviour
     private void Start()
     {
         _camera = Camera.main;
+        Hide();
     }
 
     private void Update()
