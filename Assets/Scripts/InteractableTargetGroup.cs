@@ -24,6 +24,8 @@ public class InteractableTargetGroup : MonoBehaviour
                 TargetIndex = _targetGroup.FindMember(interactable.transform),
             });
         }
+        
+        gameObject.SetActive(false);
     }
 
     private void Update()
