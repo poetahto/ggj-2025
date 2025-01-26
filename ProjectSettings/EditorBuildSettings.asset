@@ -8,5 +8,71 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/bio1.unity
     guid: 80682ed39a2de524484772769ad7abe8
+  - enabled: 1
+    path: Assets/Scenes/bio1_power.unity
+    guid: 43bcd13d03a550845893e3a4fabbb00c
+  - enabled: 1
+    path: Assets/Scenes/bio2.unity
+    guid: 0315360ea48010c4a9ab19689fd63963
+  - enabled: 1
+    path: Assets/Scenes/bio2_bio1.unity
+    guid: 5486800546623a84b9c8543b7e1af4d2
+  - enabled: 1
+    path: Assets/Scenes/bio2_lab.unity
+    guid: 73d8568ccccd02e40a09f23878ef488c
+  - enabled: 1
+    path: Assets/Scenes/bio2_security.unity
+    guid: afb6a107be1082140b76f514856f38c2
+  - enabled: 1
+    path: Assets/Scenes/bio3.unity
+    guid: b2751afec709e014b87a1dbb63d9efc1
+  - enabled: 1
+    path: Assets/Scenes/bio3_landing.unity
+    guid: 81c955af725a42c428371451dd99fa39
+  - enabled: 1
+    path: Assets/Scenes/bio3_rec.unity
+    guid: 0cc10a488285832419bb1306f5485ee7
+  - enabled: 1
+    path: Assets/Scenes/junction.unity
+    guid: f73e3e9db1df42848a457179d004cc1f
+  - enabled: 1
+    path: Assets/Scenes/junction_bio1.unity
+    guid: c9c347d3524a5e241b95911a0063f194
+  - enabled: 1
+    path: Assets/Scenes/junction_bio2.unity
+    guid: 75d370df35e2be5488afe3c978ca6f12
+  - enabled: 1
+    path: Assets/Scenes/junction_bio3.unity
+    guid: 7ba397412411b8045bbd3567a6cd0894
+  - enabled: 1
+    path: Assets/Scenes/junction_rec.unity
+    guid: beee4790ac316bc49b3ad321aa0fcde2
+  - enabled: 1
+    path: Assets/Scenes/lab.unity
+    guid: 53e5a5cfb8228eb4b928312a7901067b
+  - enabled: 1
+    path: Assets/Scenes/lab_power.unity
+    guid: 094ffc9333df4474db5e93ade9f02355
+  - enabled: 1
+    path: Assets/Scenes/landing.unity
+    guid: 8488474044e0dbb44a64dceb0c3cc760
+  - enabled: 1
+    path: Assets/Scenes/landing_suite.unity
+    guid: fdf7e7ad47d47e14ebf4f1aa3041e165
+  - enabled: 1
+    path: Assets/Scenes/power.unity
+    guid: 97cf869d67ac1ee4b8fe735497c76431
+  - enabled: 1
+    path: Assets/Scenes/rec.unity
+    guid: 2980adb15ab8cdd42a39d9845ee8785c
+  - enabled: 1
+    path: Assets/Scenes/security.unity
+    guid: df637f7c663ef864eabaec643f0ec770
+  - enabled: 1
+    path: Assets/Scenes/suite.unity
+    guid: d0e2500d8ae390c4aa8d780c6c5894ab
+  - enabled: 1
+    path: Assets/Scenes/suite_power.unity
+    guid: 0babb7ff5971ac148a3dee82af38fd10
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3b188e121409bb843b29f0e60cda57e9, type: 3}
