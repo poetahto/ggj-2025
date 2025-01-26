@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
@@ -10,19 +12,18 @@ namespace DefaultNamespace
         [SerializeField] private CanvasGroup fadeScreen;
         [SerializeField] private float fadeDuration = 5;
 
-        public Dictionary<string, float> Floats =  new Dictionary<string, float>();
+        public event Action OnUseEnergy;
+        public event Action OnRefillEnergy;
         
+        public int EnergyCount { get; private set; }
         public bool IsTransitioning { get; set; }
         public string RespawnScene { get; set; }
         public string RespawnId { get; set; }
-        // todo: track respawn scene + id
-        // todo: respawn logic
-        // todo: track all death scenes + position
 
         public void Respawn()
         {
-            if (RespawnScene != string.Empty && RespawnId != string.Empty)
-                Warp(RespawnScene, RespawnId);
+            if (RespawnScene != string.Empty && RespawnId != string.Empty && !IsTransitioning)
+                StartCoroutine(RespawnCoroutine());
         }
 
         public void Warp(string targetScene, string targetId)
@@ -31,33 +32,40 @@ namespace DefaultNamespace
                 StartCoroutine(WarpCoroutine(targetScene, targetId));
         }
 
+        private IEnumerator RespawnCoroutine()
+        {
+            IsTransitioning = true;
+            yield return StartCoroutine(FadeTo(1));
+            yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
+            EnergyCount = 4;
+            OnRefillEnergy?.Invoke();
+            yield return StartCoroutine(FadeTo(0));
+            
+            // play spawn animation
+            WarpLocation warp = GetWarpLocation(RespawnId);
+
+            if (warp != null && warp.HasWarpCutscene())
+            {
+                InputSystem.actions.FindActionMap("Player").Disable();
+                yield return StartCoroutine(warp.PlayCutsceneCoroutine());
+                InputSystem.actions.FindActionMap("Player").Enable();
+            }
+            
+            IsTransitioning = false;
+        }
+
         private IEnumerator WarpCoroutine(string targetScene, string targetId)
         {
             IsTransitioning = true;
             yield return StartCoroutine(FadeTo(1));
-            yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
-            yield return null;
-            WarpLocation targetWarp = null;
-
-            foreach (WarpLocation warp in FindObjectsByType<WarpLocation>(FindObjectsSortMode.None))
-            {
-                if (warp.id != targetId)
-                    continue;
-                
-                targetWarp = warp;
-                break;
-            }
-            
-            GameObject player = GameObject.FindWithTag("Player");
-            
-            if (targetWarp != null && player != null)
-            {
-                Vector3 pos = targetWarp.transform.position;
-                Quaternion rot = targetWarp.transform.rotation;
-                player.transform.SetPositionAndRotation(pos, rot);
-            }
-            
+            yield return StartCoroutine(LoadSceneAtWarp(targetScene, targetId));
             yield return StartCoroutine(FadeTo(0));
+
+            // pop a bubble after a little bit
+            yield return new WaitForSeconds(1);
+            EnergyCount--;
+            OnUseEnergy?.Invoke();
+            
             IsTransitioning = false;
         }
 
@@ -75,6 +83,35 @@ namespace DefaultNamespace
             }
 
             fadeScreen.alpha = alpha;
+        }
+        
+        private IEnumerator LoadSceneAtWarp(string targetScene, string targetId)
+        {
+            yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
+            yield return null; // allow things to initialize
+            
+            GameObject player = GameObject.FindWithTag("Player");
+            WarpLocation warp = GetWarpLocation(targetId);
+            
+            if (warp != null && player != null)
+            {
+                Vector3 pos = warp.transform.position;
+                Quaternion rot = warp.transform.rotation;
+                player.transform.SetPositionAndRotation(pos, rot);
+            }
+        }
+        
+        private static WarpLocation GetWarpLocation(string id)
+        {
+            foreach (WarpLocation warp in FindObjectsByType<WarpLocation>(FindObjectsSortMode.None))
+            {
+                if (warp.id != id)
+                    continue;
+
+                return warp;
+            }
+            
+            return null;
         }
         
         private static GlobalState _instance;
