@@ -3402,6 +3402,7 @@ MonoBehaviour:
   range: 5
   radius: 1
   maxWeight: 1
+  emotion: 1
 --- !u!65 &1143385943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3822,6 +3823,7 @@ MonoBehaviour:
   range: 5
   radius: 1
   maxWeight: 1
+  emotion: 3
 --- !u!65 &1300529819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4232,8 +4234,7 @@ MonoBehaviour:
   feet: {fileID: 777501508}
   treadL: {fileID: 2100000, guid: fcc6b7d3da47a14488c1dfe6107844d8, type: 2}
   treadR: {fileID: 2100000, guid: 3a9a88dc5653151499bba182f448907d, type: 2}
-  faceMat: {fileID: 0}
-  emotions: []
+  faceMat: {fileID: 2100000, guid: 18399e5e9b661e14ca7ad9105ffbf5c9, type: 2}
   interactionController: {fileID: 0}
   movementController: {fileID: 0}
   neckInitPosition: {x: 0, y: 0, z: 0}
@@ -4241,6 +4242,7 @@ MonoBehaviour:
   headSpring: {fileID: 11400000, guid: 2fe3833385d502747bac4f6296749a88, type: 2}
   bodySpringY: {fileID: 11400000, guid: 10cafaebc46ccdd47ac2d12541275f0d, type: 2}
   initalBodyY: 0
+  headRotSpring: {fileID: 11400000, guid: 61f954c604b4814c0956e25be51708c8, type: 2}
 --- !u!1 &1587888304
 GameObject:
   m_ObjectHideFlags: 0

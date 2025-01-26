@@ -24,16 +24,15 @@ public class PlayerAnimation : MonoBehaviour
 
     public Material faceMat;
 
-    public Texture2D[] emotions;
-
     public enum RobotFace {
+        shocked,
+        nervous,
+        angry,
+        blank,
         neutral,
         sad,
         happy,
-        question,
-        shocked,
-        distressed,
-        mad
+        question
     }
 
     public InputInteractionController interactionController;
@@ -45,6 +44,8 @@ public class PlayerAnimation : MonoBehaviour
     public GenericSpring bodySpringY;
     GenericSpring headSpringY, headSpringZ;
     public float initalBodyY;
+
+    public QuaternionSpring headRotSpring;
 
 
     // Start is called before the first frame update
@@ -61,7 +62,9 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     public void SetFace(RobotFace emotion){
-        faceMat.SetTexture("_Emission", emotions[(int)emotion]);
+        int y = (int)emotion / 4;
+        int x = (int)emotion % 4; 
+        faceMat.mainTextureOffset = new Vector2(0.25f * x, .5f * y);
     }
 
     // Update is called once per frame
@@ -78,6 +81,7 @@ public class PlayerAnimation : MonoBehaviour
         Quaternion headLookGoal = headGoal.transform.rotation;
         if(interactionController._interactable != null){
             headLookGoal = Quaternion.Euler(bodySpringResult, 0, 0) * Quaternion.LookRotation(interactionController._interactable.transform.position - head.transform.position);
+            SetFace(interactionController._interactable.emotion);
         }
         headSpring.curr = head.transform.position.x;
         headSpringY.curr = head.transform.position.y;
@@ -95,6 +99,6 @@ public class PlayerAnimation : MonoBehaviour
                                                 headSpringZ.Evaluate(headGoal.transform.position.z));
          
         head.transform.rotation = Quaternion.Slerp(head.transform.rotation, headLookGoal, (lookSpeed + Mathf.Abs(movementController._velocity.y) * rotationLookModifier) * Time.deltaTime);
-
+        // head.transform.rotation = head.transform.rotation * Quaternion.Inverse(headLookGoal);
     }
 }
