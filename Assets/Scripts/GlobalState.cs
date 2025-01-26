@@ -29,7 +29,7 @@ namespace DefaultNamespace
         public event Action OnRefillEnergy;
 
         public GameState GameState { get; set; } = GameState.Intro;
-        public int EnergyCount { get; private set; } = 4;
+        public int EnergyCount { get; private set; } = 5;
         public bool IsTransitioning { get; set; }
         public string RespawnScene { get; set; } = "bio1";
         public string RespawnId { get; set; } = "Bio1Respawn";
@@ -58,7 +58,7 @@ namespace DefaultNamespace
             yield return StartCoroutine(FadeTo(1));
             Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
-            EnergyCount = 4;
+            EnergyCount = 5;
             OnRefillEnergy?.Invoke();
             yield return StartCoroutine(FadeTo(0));
             
@@ -135,7 +135,7 @@ namespace DefaultNamespace
                         while (remaining > 0)
                         {
                             remaining -= Time.unscaledDeltaTime;
-                            _musicInstance.setVolume(remaining / musicFade);
+                            _musicInstance.setVolume(Mathf.Clamp01(remaining / musicFade));
                             yield return null;
                         }
                         _musicInstance.stop(STOP_MODE.ALLOWFADEOUT);
@@ -160,7 +160,7 @@ namespace DefaultNamespace
                 while (remaining > 0)
                 {
                     remaining -= Time.unscaledDeltaTime;
-                    _musicInstance.setVolume(remaining / musicFade);
+                    _musicInstance.setVolume(Mathf.Clamp01(remaining / musicFade));
                     yield return null;
                 }
                 _musicInstance.stop(STOP_MODE.ALLOWFADEOUT);

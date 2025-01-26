@@ -43,3 +43,43 @@ MonoBehaviour:
       Path: event:/Biosphere 1 - MUS
     parameterId: Intensity
     parameterValue: 0
+  - sceneName: bio2
+    eventReference:
+      Guid:
+        Data1: 1786299830
+        Data2: 1238904359
+        Data3: -1209102150
+        Data4: 2019779316
+      Path: event:/Biosphere 2 - MUS
+    parameterId: Intensity
+    parameterValue: 1
+  - sceneName: junction_bio2
+    eventReference:
+      Guid:
+        Data1: 1786299830
+        Data2: 1238904359
+        Data3: -1209102150
+        Data4: 2019779316
+      Path: event:/Biosphere 2 - MUS
+    parameterId: Intensity
+    parameterValue: 0
+  - sceneName: bio2_security
+    eventReference:
+      Guid:
+        Data1: 1786299830
+        Data2: 1238904359
+        Data3: -1209102150
+        Data4: 2019779316
+      Path: event:/Biosphere 2 - MUS
+    parameterId: Intensity
+    parameterValue: 0
+  - sceneName: bio2_lab
+    eventReference:
+      Guid:
+        Data1: 1786299830
+        Data2: 1238904359
+        Data3: -1209102150
+        Data4: 2019779316
+      Path: event:/Biosphere 2 - MUS
+    parameterId: Intensity
+    parameterValue: 0

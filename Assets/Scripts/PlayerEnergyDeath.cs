@@ -27,7 +27,7 @@ namespace DefaultNamespace
 
             switch (state.EnergyCount)
             {
-                case 4:
+                case 5:
                     textBox.SetText("Energy refilled.", 1);
                     break;
                 case 3:
