@@ -7,12 +7,8 @@ using UnityEngine.InputSystem;
 namespace DefaultNamespace
 {
     public class InputMovementController : MonoBehaviour
-    {
-        private static readonly int MoveX = Animator.StringToHash("MoveX");
-        private static readonly int MoveY = Animator.StringToHash("MoveY");
-        
+    {        
         public CharacterController controller;
-        public Animator animator;
         public float moveSpeed = 0.8f;
         public float rotateSpeed = .8f;
         public float acceleration = 1;
@@ -40,12 +36,12 @@ namespace DefaultNamespace
             
             transform.Rotate(new Vector3(0,_velocity.y, 0));
             controller.SimpleMove(this.transform.forward * _velocity.x);
-            animator.SetFloat(MoveX, controller.velocity.x);
-            animator.SetFloat(MoveY, controller.velocity.y);
             float forwardPercent = Mathf.Abs(_velocity.x) / moveSpeed;
             float rotatePercent = Mathf.Abs(_velocity.y) / rotateSpeed;
-            treadAudioEmitter.SetParameter("Speed", (forwardPercent + rotatePercent) / 2.0f);
-            treadAudioEmitter.SetParameter("Ptich_Turning", rotatePercent);
+            if(treadAudioEmitter != null){
+                treadAudioEmitter.SetParameter("Speed", (forwardPercent + rotatePercent) / 2.0f);
+                treadAudioEmitter.SetParameter("Ptich_Turning", rotatePercent);
+            }
         }
 
         private void HandleWalk(InputAction.CallbackContext context)
