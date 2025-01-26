@@ -12,7 +12,7 @@ namespace DefaultNamespace
         
         private void HandleInteract(InputAction.CallbackContext context)
         {
-            GlobalState.GetInstance().Respawn();
+            GlobalState.GetInstance().DepleteAllEnergy();
         }
     }
 }

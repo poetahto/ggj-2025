@@ -55,6 +55,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "ec366b6b-21d2-44ee-8400-d660ff851e1b",
+                    "path": "<HID::Nintendo Wireless Gamepad>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "WASD",
                     "id": "8a7121ba-4ed2-4243-b439-17ac4ff5d047",
                     "path": "2DVector",
@@ -111,6 +122,17 @@
                 },
                 {
                     "name": "",
+                    "id": "fdfa6a44-22cd-438a-9d42-b0e281191b93",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "24fdd936-0497-40db-8426-c259775c80b6",
                     "path": "<Keyboard>/2",
                     "interactions": "",
@@ -122,8 +144,30 @@
                 },
                 {
                     "name": "",
+                    "id": "4d1c6a2f-7098-4dba-a8fd-c4a0c31cf7a5",
+                    "path": "<HID::Nintendo Wireless Gamepad>/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DebugSpeedUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "eee833f7-c760-41a7-8233-40adb6db6f09",
                     "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DebugSlowDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c6c3a193-4c06-4f84-a15b-41abf775ae16",
+                    "path": "<HID::Nintendo Wireless Gamepad>/button7",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

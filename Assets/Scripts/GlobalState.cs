@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
+    public enum GameState
+    {
+        Intro, Playing,
+    }
+    
     public class GlobalState : MonoBehaviour
     {
         [SerializeField] private CanvasGroup fadeScreen;
@@ -14,11 +19,12 @@ namespace DefaultNamespace
 
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
-        
-        public int EnergyCount { get; private set; }
+
+        public GameState GameState { get; set; } = GameState.Intro;
+        public int EnergyCount { get; private set; } = 4;
         public bool IsTransitioning { get; set; }
-        public string RespawnScene { get; set; }
-        public string RespawnId { get; set; }
+        public string RespawnScene { get; set; } = "bio1";
+        public string RespawnId { get; set; } = "Bio1Respawn";
 
         public void Respawn()
         {
@@ -35,7 +41,9 @@ namespace DefaultNamespace
         private IEnumerator RespawnCoroutine()
         {
             IsTransitioning = true;
+            textBox.Hide();
             yield return StartCoroutine(FadeTo(1));
+            Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
             EnergyCount = 4;
             OnRefillEnergy?.Invoke();
@@ -57,6 +65,7 @@ namespace DefaultNamespace
         private IEnumerator WarpCoroutine(string targetScene, string targetId)
         {
             IsTransitioning = true;
+            textBox.Hide();
             yield return StartCoroutine(FadeTo(1));
             yield return StartCoroutine(LoadSceneAtWarp(targetScene, targetId));
             yield return StartCoroutine(FadeTo(0));
@@ -76,13 +85,19 @@ namespace DefaultNamespace
             
             while (elapsed < fadeDuration)
             {
-                elapsed += Time.deltaTime;
+                elapsed += Time.unscaledDeltaTime;
                 float t = elapsed / fadeDuration;
                 fadeScreen.alpha = Mathf.Lerp(initialValue, alpha, t);
                 yield return null;
             }
 
             fadeScreen.alpha = alpha;
+        }
+
+        public void DepleteAllEnergy()
+        {
+            EnergyCount = 0;
+            OnUseEnergy?.Invoke();
         }
         
         private IEnumerator LoadSceneAtWarp(string targetScene, string targetId)

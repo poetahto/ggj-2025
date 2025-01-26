@@ -5,6 +5,7 @@ public class InteractHint : MonoBehaviour
 {
     public CanvasGroup canvasGroup;
     public float fadeTime = 0.5f;
+    
     private Camera _camera;
     private Transform _target;
     private Coroutine _coroutine;
