@@ -28,8 +28,8 @@ namespace DefaultNamespace
 
         private void Update()
         {
-            _velocity.y = Mathf.Clamp(_inputDirection.x * rotateSpeed * Time.deltaTime, -rotateSpeed, rotateSpeed);//Lmao
-            _velocity.x = Mathf.Clamp(_inputDirection.y * moveSpeed * Time.deltaTime, -moveSpeed, moveSpeed);
+            _velocity.y = Mathf.Clamp(_inputDirection.x * rotateSpeed, -rotateSpeed, rotateSpeed);//Lmao
+            _velocity.x = Mathf.Clamp(_inputDirection.y * moveSpeed, -moveSpeed, moveSpeed);
             this.transform.Rotate(new Vector3(0,_velocity.y, 0));
             controller.SimpleMove(this.transform.forward * _velocity.x);
             animator.SetFloat(MoveX, controller.velocity.x);

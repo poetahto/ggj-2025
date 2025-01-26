@@ -8,7 +8,7 @@ public class InputInteractionController : MonoBehaviour
     public Transform distanceOrigin;
     public CinemachineTargetGroup targetGroup;
     
-    private Interactable _interactable;
+    public Interactable _interactable;
     
     private void Start()
     {
