@@ -914,15 +914,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -972,6 +972,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5321715338704090685}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5262350138214976789}
   m_SourcePrefab: {fileID: 100100000, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}
 --- !u!4 &2283081800528980793 stripped
 Transform:
@@ -1051,6 +1054,19 @@ MonoBehaviour:
   bodySpringY: {fileID: 11400000, guid: 10cafaebc46ccdd47ac2d12541275f0d, type: 2}
   headRotSpring: {fileID: 0}
   bodyRotSpring: {fileID: 11400000, guid: b9fa8b0f02c180210ba751c1af7b4191, type: 2}
+--- !u!114 &5262350138214976789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637238376033728681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e304c370da1248479ab4e18fb4f3c63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseDurationPostDeath: 4
 --- !u!23 &7843080389145267039 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 713180659725864615, guid: 3e5c548a7e613a94ebc64fb4910858f8, type: 3}

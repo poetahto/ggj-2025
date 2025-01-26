@@ -21,7 +21,7 @@ namespace DefaultNamespace
         public event Action OnRefillEnergy;
 
         public GameState GameState { get; set; } = GameState.Intro;
-        public int EnergyCount { get; private set; }
+        public int EnergyCount { get; private set; } = 4;
         public bool IsTransitioning { get; set; }
         public string RespawnScene { get; set; } = "bio1";
         public string RespawnId { get; set; } = "Bio1Respawn";
@@ -43,6 +43,7 @@ namespace DefaultNamespace
             IsTransitioning = true;
             textBox.Hide();
             yield return StartCoroutine(FadeTo(1));
+            Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
             EnergyCount = 4;
             OnRefillEnergy?.Invoke();
@@ -84,13 +85,19 @@ namespace DefaultNamespace
             
             while (elapsed < fadeDuration)
             {
-                elapsed += Time.deltaTime;
+                elapsed += Time.unscaledDeltaTime;
                 float t = elapsed / fadeDuration;
                 fadeScreen.alpha = Mathf.Lerp(initialValue, alpha, t);
                 yield return null;
             }
 
             fadeScreen.alpha = alpha;
+        }
+
+        public void DepleteAllEnergy()
+        {
+            EnergyCount = 0;
+            OnUseEnergy?.Invoke();
         }
         
         private IEnumerator LoadSceneAtWarp(string targetScene, string targetId)

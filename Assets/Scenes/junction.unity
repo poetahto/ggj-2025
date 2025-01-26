@@ -19826,6 +19826,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2406240291397953271, guid: b09ac94d714cafd9f983fbf4328d729d, type: 3}
+      propertyPath: m_WrapMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406240291397953271, guid: b09ac94d714cafd9f983fbf4328d729d, type: 3}
+      propertyPath: m_InitialState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3888963134067194423, guid: b09ac94d714cafd9f983fbf4328d729d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2

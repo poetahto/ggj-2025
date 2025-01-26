@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -12,20 +12,22 @@ namespace DefaultNamespace
         public float fadeTime = 0.25f;
         public float characterDelay = 0.1f;
         
-        private WaitForSeconds _characterDelay;
+        private WaitForSecondsRealtime _characterDelay;
         private Coroutine _currentCoroutine;
+
+        public bool IsRunning => _currentCoroutine != null;
 
         private void Awake()
         {
-            _characterDelay = new WaitForSeconds(characterDelay);
+            _characterDelay = new WaitForSecondsRealtime(characterDelay);
         }
-
-        public void SetText(string text)
+        
+        public void SetText(string text, float duration)
         {
             if (_currentCoroutine != null)
                 StopCoroutine(_currentCoroutine);
             
-            _currentCoroutine = StartCoroutine(SetTextCoroutine(text));
+            _currentCoroutine = StartCoroutine(SetTextCoroutine(text, duration));
         }
 
         public void Hide()
@@ -33,10 +35,16 @@ namespace DefaultNamespace
             if (_currentCoroutine != null)
                 StopCoroutine(_currentCoroutine);
             
-            _currentCoroutine = StartCoroutine(FadeTo(0));
+            _currentCoroutine = StartCoroutine(HideCoroutine());
         }
 
-        private IEnumerator SetTextCoroutine(string text)
+        private IEnumerator HideCoroutine()
+        {
+            yield return StartCoroutine(FadeTo(0));
+            _currentCoroutine = null;
+        }
+
+        private IEnumerator SetTextCoroutine(string text, float duration)
         {
             yield return StartCoroutine(FadeTo(0));
             display.maxVisibleCharacters = 0;
@@ -48,6 +56,14 @@ namespace DefaultNamespace
                 display.maxVisibleCharacters++;
                 yield return _characterDelay;
             }
+
+            if (duration > 0)
+            {
+                yield return new WaitForSecondsRealtime(duration);
+                yield return FadeTo(0);
+            }
+
+            _currentCoroutine = null;
         }
 
         private IEnumerator FadeTo(float alpha)

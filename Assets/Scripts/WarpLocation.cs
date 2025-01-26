@@ -8,7 +8,7 @@ public class WarpLocation : MonoBehaviour
     public string id;
     public PlayableDirector warpCutscene;
     public bool isIntroWarp;
-
+ 
     private void Start()
     {
         GlobalState state = GlobalState.GetInstance();
