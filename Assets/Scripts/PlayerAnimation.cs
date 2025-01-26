@@ -24,9 +24,10 @@ public class PlayerAnimation : MonoBehaviour
     public Transform feet;
 
     [Header("Tread Stuff")]
-    public MeshRenderer treadL,treadR;
+    public MeshRenderer treadL;
+    public MeshRenderer treadR;
 
-    public TrailRenderer trackTrailL,trackTrailR;
+    public TrailRenderer trackTrailL, trackTrailR;
     public MeshRenderer faceRenderer;
 
     public enum RobotFace {
@@ -52,9 +53,6 @@ public class PlayerAnimation : MonoBehaviour
     GenericSpring headSpringY, headSpringZ;
     
     float initalBodyY;
-
-    public GenericSpring headRotSpring;
-    public GenericSpring bodyRotSpring;
 
 
 
@@ -85,10 +83,9 @@ public class PlayerAnimation : MonoBehaviour
             trackTrailL.emitting = false;
             trackTrailR.emitting = false;
         }
-        trackTrailL.emitting = Physics.Raycast(new Ray(treadL.transform.position, -treadL.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
-        trackTrailR.emitting = Physics.Raycast(new Ray(treadR.transform.position, -treadR.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
+        //trackTrailL.emitting = Physics.Raycast(new Ray(treadL.transform.position, -treadL.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
+        //trackTrailR.emitting = Physics.Raycast(new Ray(treadR.transform.position, -treadR.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
 
-        bodyRotSpring.curr = torso.transform.rotation.y;
         float bodySpringResult = -bodySpring.Evaluate(movementController._velocity.x/movementController.moveSpeed);
         torso.transform.localRotation = Quaternion.LookRotation(movementController.transform.forward) * Quaternion.Euler(bodySpringResult, 0, 0);
         

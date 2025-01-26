@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b139916f020a48348a4d5e69e4cf3faa, type: 3}
   m_Name: HeadSpring
   m_EditorClassIdentifier: 
-  springForce: -0.0015634317
-  curr: 8.543062
+  springForce: 0
+  curr: 9.414493
   k: 200
-  dampening: 0.95
+  dampening: 0.5
   mass: 1
   intensity: 1

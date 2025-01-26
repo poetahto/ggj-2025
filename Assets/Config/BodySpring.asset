@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b139916f020a48348a4d5e69e4cf3faa, type: 3}
   m_Name: BodySpring
   m_EditorClassIdentifier: 
-  goal: 0
-  springForce: -0.0004836982
-  curr: 0.010994104
-  k: 80
+  springForce: 6.8138904e-18
+  curr: 3.7126827e-17
+  k: 120
   dampening: 0.98
-  mass: 3
-  intensity: 10
+  mass: 2
+  intensity: 5
