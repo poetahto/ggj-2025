@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{16046dab-654f-4399-9952-f6fef1a70c79}">
 		<property name="name">
 			<value>Cave_Ambience</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{abe55634-f8ae-4b26-a3a6-3451644ba0a5}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{bd23887b-97b6-46b9-8029-c21145999533}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{025f2338-6027-4170-80bd-20729a156f21}">

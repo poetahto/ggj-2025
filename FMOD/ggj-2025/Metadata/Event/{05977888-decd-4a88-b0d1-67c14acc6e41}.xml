@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{05977888-decd-4a88-b0d1-67c14acc6e41}">
 		<property name="name">
 			<value>Datapad_Interact</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{63091a59-83f3-444d-b0b6-a690c10f5592}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{bd23887b-97b6-46b9-8029-c21145999533}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{fd622eea-0382-4731-ab6b-48efc01970c6}">
