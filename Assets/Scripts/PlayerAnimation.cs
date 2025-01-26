@@ -20,7 +20,7 @@ public class PlayerAnimation : MonoBehaviour
     public Transform torso;
     public Transform feet;
 
-    public Material treadL,treadR;
+    public MeshRenderer treadL,treadR;
 
     public Material faceMat;
 
@@ -69,8 +69,8 @@ public class PlayerAnimation : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        treadL.mainTextureOffset += new Vector2(movementController._velocity.x/movementController.moveSpeed + movementController._velocity.y/movementController.rotateSpeed, 0);
-        treadR.mainTextureOffset += new Vector2(movementController._velocity.x/movementController.moveSpeed + movementController._velocity.y/movementController.rotateSpeed, 0);
+        treadL.material.mainTextureOffset -= new Vector2(0, movementController._velocity.x + movementController._velocity.y) * 4 * Time.deltaTime;
+        treadR.material.mainTextureOffset -= new Vector2(0, movementController._velocity.x - movementController._velocity.y) * 4 * Time.deltaTime;
 
         float goal = movementController._velocity.x/movementController.moveSpeed;
         float bodySpringResult = -bodySpring.Evaluate(goal);

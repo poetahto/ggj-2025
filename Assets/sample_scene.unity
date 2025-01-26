@@ -2514,7 +2514,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a9a88dc5653151499bba182f448907d, type: 2}
+  - {fileID: 2100000, guid: fcc6b7d3da47a14488c1dfe6107844d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4232,8 +4232,8 @@ MonoBehaviour:
   headGoal: {fileID: 1227063598}
   torso: {fileID: 216354206}
   feet: {fileID: 777501508}
-  treadL: {fileID: 2100000, guid: fcc6b7d3da47a14488c1dfe6107844d8, type: 2}
-  treadR: {fileID: 2100000, guid: 3a9a88dc5653151499bba182f448907d, type: 2}
+  treadL: {fileID: 1831706346}
+  treadR: {fileID: 700125953}
   faceMat: {fileID: 2100000, guid: 18399e5e9b661e14ca7ad9105ffbf5c9, type: 2}
   interactionController: {fileID: 0}
   movementController: {fileID: 0}
