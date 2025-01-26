@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{575260c3-9374-45d7-95c3-06d020a485cb}">
+		<property name="assetPath">
+			<value>BioSphere 2 v2 - Effected Birds.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>139.63637188208617</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5de03fe7-c2f8-4ca3-909d-626e6e761fe0}</destination>
+		</relationship>
+	</object>
+</objects>
