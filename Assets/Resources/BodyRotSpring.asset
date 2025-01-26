@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b139916f020a48348a4d5e69e4cf3faa, type: 3}
-  m_Name: HeadSpring
+  m_Name: BodyRotSpring
   m_EditorClassIdentifier: 
-  springForce: -0.0015634317
-  curr: 8.543062
-  k: 200
-  dampening: 0.95
-  mass: 1
+  springForce: 191.6701
+  curr: 0.9487987
+  k: 1
+  dampening: 0.99
+  mass: 50
   intensity: 1

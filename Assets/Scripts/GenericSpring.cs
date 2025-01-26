@@ -9,7 +9,6 @@ public class GenericSpring : ScriptableObject{
     public float k;
     public float dampening;
     public float mass;
-
     public float intensity;
 
 

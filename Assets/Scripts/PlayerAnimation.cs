@@ -8,11 +8,14 @@ public class PlayerAnimation : MonoBehaviour
 {
 
     public float rotationLookModifier = 2;
+    public float bodyLookModifier = 6;
     public float lookSpeed = 2;
 
     [Range(0, 0.1f)]
     public float bounceIntensity = 0.5f;
     public float bounceSpeed = 5;
+
+    [Header("General Transforms")]
 
     public Transform head;
     public Transform headGoal;
@@ -20,9 +23,11 @@ public class PlayerAnimation : MonoBehaviour
     public Transform torso;
     public Transform feet;
 
+    [Header("Tread Stuff")]
     public MeshRenderer treadL,treadR;
 
-    public Material faceMat;
+    public TrailRenderer trackTrailL,trackTrailR;
+    public MeshRenderer faceRenderer;
 
     public enum RobotFace {
         shocked,
@@ -35,17 +40,22 @@ public class PlayerAnimation : MonoBehaviour
         question
     }
 
+    [Header("Controllers")]
+
     public InputInteractionController interactionController;
     public InputMovementController movementController;
 
-    public Vector3 neckInitPosition;
+    [Header("Springs")]
     public GenericSpring bodySpring;
     public GenericSpring headSpring;
     public GenericSpring bodySpringY;
     GenericSpring headSpringY, headSpringZ;
-    public float initalBodyY;
+    
+    float initalBodyY;
 
-    public QuaternionSpring headRotSpring;
+    public GenericSpring headRotSpring;
+    public GenericSpring bodyRotSpring;
+
 
 
     // Start is called before the first frame update
@@ -55,30 +65,36 @@ public class PlayerAnimation : MonoBehaviour
         headSpringY = Instantiate(headSpring);
         headSpringZ = Instantiate(headSpring);
         bodySpringY = Instantiate(bodySpring);
-
-        // neckInitPosition = neck.transform.localPosition;
-        interactionController = this.GetComponent<InputInteractionController>();
-        movementController = this.GetComponent<InputMovementController>();
     }
 
     public void SetFace(RobotFace emotion){
         int y = (int)emotion / 4;
         int x = (int)emotion % 4; 
-        faceMat.mainTextureOffset = new Vector2(0.25f * x, .5f * y);
+        faceRenderer.material.mainTextureOffset = new Vector2(0.25f * x, .5f * y);
     }
 
     // Update is called once per frame
     void Update(){
+
+        this.transform.position = movementController.transform.position;
+        feet.transform.rotation = movementController.transform.rotation;
+
         treadL.material.mainTextureOffset -= new Vector2(0, movementController._velocity.x + movementController._velocity.y) * 4 * Time.deltaTime;
         treadR.material.mainTextureOffset -= new Vector2(0, movementController._velocity.x - movementController._velocity.y) * 4 * Time.deltaTime;
+        if(!movementController.controller.isGrounded){
+            trackTrailL.emitting = false;
+            trackTrailR.emitting = false;
+        }
+        trackTrailL.emitting = Physics.Raycast(new Ray(treadL.transform.position, -treadL.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
+        trackTrailR.emitting = Physics.Raycast(new Ray(treadR.transform.position, -treadR.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
 
-        float goal = movementController._velocity.x/movementController.moveSpeed;
-        float bodySpringResult = -bodySpring.Evaluate(goal);
-        torso.transform.localRotation = Quaternion.Euler(bodySpringResult, 0, 0);
-        // torso.transform.localRotation = Quaternion.Euler(-Mathf.Sign(bodyAngle) * springCurve.Evaluate(Mathf.Abs(bodyAngle)) * moveLaxivityIntensity, 0, 0);
+        bodyRotSpring.curr = torso.transform.rotation.y;
+        float bodySpringResult = -bodySpring.Evaluate(movementController._velocity.x/movementController.moveSpeed);
+        torso.transform.localRotation = Quaternion.LookRotation(movementController.transform.forward) * Quaternion.Euler(bodySpringResult, 0, 0);
         
 
         Quaternion headLookGoal = headGoal.transform.rotation;
+        SetFace(RobotFace.neutral);
         if(interactionController._interactable != null){
             headLookGoal = Quaternion.Euler(bodySpringResult, 0, 0) * Quaternion.LookRotation(interactionController._interactable.transform.position - head.transform.position);
             SetFace(interactionController._interactable.emotion);
@@ -97,7 +113,7 @@ public class PlayerAnimation : MonoBehaviour
         head.transform.position = new Vector3(  headSpring.Evaluate(headGoal.transform.position.x),
                                                 headSpringY.Evaluate(headGoal.transform.position.y),
                                                 headSpringZ.Evaluate(headGoal.transform.position.z));
-         
+        
         head.transform.rotation = Quaternion.Slerp(head.transform.rotation, headLookGoal, (lookSpeed + Mathf.Abs(movementController._velocity.y) * rotationLookModifier) * Time.deltaTime);
         // head.transform.rotation = head.transform.rotation * Quaternion.Inverse(headLookGoal);
     }
