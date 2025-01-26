@@ -22,7 +22,6 @@ public class WallCutoutHelper : MonoBehaviour{
         Shader.SetGlobalFloat("_CutoutSize", cutoutSize);
         Shader.SetGlobalFloat("_CutoutFade", cutoutFade);
         Shader.SetGlobalFloat("_DitherSize", ditherSize);
-
     }
 
     void OnDestroy(){
