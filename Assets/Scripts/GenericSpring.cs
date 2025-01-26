@@ -4,7 +4,6 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Springs/SpringData")]
 public class GenericSpring : ScriptableObject{
-    public float goal;
     public float springForce;
     public float curr;
     public float k;

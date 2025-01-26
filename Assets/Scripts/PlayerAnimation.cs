@@ -22,7 +22,19 @@ public class PlayerAnimation : MonoBehaviour
 
     public Material treadL,treadR;
 
+    public Material faceMat;
 
+    public Texture2D[] emotions;
+
+    public enum RobotFace {
+        neutral,
+        sad,
+        happy,
+        question,
+        shocked,
+        distressed,
+        mad
+    }
 
     public InputInteractionController interactionController;
     public InputMovementController movementController;
@@ -46,6 +58,10 @@ public class PlayerAnimation : MonoBehaviour
         // neckInitPosition = neck.transform.localPosition;
         interactionController = this.GetComponent<InputInteractionController>();
         movementController = this.GetComponent<InputMovementController>();
+    }
+
+    public void SetFace(RobotFace emotion){
+        faceMat.SetTexture("_Emission", emotions[(int)emotion]);
     }
 
     // Update is called once per frame

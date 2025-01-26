@@ -15,7 +15,7 @@ MonoBehaviour:
   goal: 0
   springForce: 0
   curr: 0
-  k: 0
-  dampening: 0
-  mass: 0
-  intensity: 0
+  k: 1
+  dampening: 1
+  mass: 1
+  intensity: 1
