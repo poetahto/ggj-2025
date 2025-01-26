@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{05f29475-bebd-424a-be56-fb955abe60f9}">
+		<property name="name">
+			<value>Ptich_Turning</value>
+		</property>
+		<relationship name="folder">
+			<destination>{1d54bc25-b4be-4a7b-8a0b-6f86f9a56939}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d70be91c-77d6-431c-999b-4ab1cbe628b5}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d70be91c-77d6-431c-999b-4ab1cbe628b5}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
