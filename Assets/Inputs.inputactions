@@ -22,6 +22,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "DebugSpeedUp",
+                    "type": "Button",
+                    "id": "570042da-f21c-4f12-909b-c2dd70012f73",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DebugSlowDown",
+                    "type": "Button",
+                    "id": "e2f63f82-e979-4b8a-b907-0a3993915d9e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -90,6 +108,28 @@
                     "action": "Walk",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "24fdd936-0497-40db-8426-c259775c80b6",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DebugSpeedUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eee833f7-c760-41a7-8233-40adb6db6f09",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DebugSlowDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

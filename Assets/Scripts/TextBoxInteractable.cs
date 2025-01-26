@@ -4,13 +4,13 @@ namespace DefaultNamespace
 {
     public class TextBoxInteractable : MonoBehaviour
     {
-        public TextBox textBox;
         public string[] lines;
 
         public int CurrentLine { get; set; } = -1;
 
         public void HandleInteract()
         {
+            TextBox textBox = GlobalState.GetInstance().textBox;
             CurrentLine++;
 
             if (CurrentLine >= lines.Length)

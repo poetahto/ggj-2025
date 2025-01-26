@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -11,6 +10,7 @@ namespace DefaultNamespace
     {
         [SerializeField] private CanvasGroup fadeScreen;
         [SerializeField] private float fadeDuration = 5;
+        public TextBox textBox;
 
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;

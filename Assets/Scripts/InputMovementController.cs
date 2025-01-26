@@ -3,6 +3,7 @@ using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
@@ -11,7 +12,9 @@ namespace DefaultNamespace
         public CharacterController controller;
         public float moveSpeed = 0.8f;
         public float rotateSpeed = .8f;
-        public float acceleration = 1;
+        public float rotateAccel = 90;
+        [FormerlySerializedAs("acceleration")]
+        public float moveAccel = 1;
         public StudioEventEmitter treadAudioEmitter;
 
         private Vector2 _targetVelocity;
@@ -26,15 +29,36 @@ namespace DefaultNamespace
             _camera = Camera.main;
             InputSystem.actions["Walk"].performed += HandleWalk;
             InputSystem.actions["Walk"].canceled += HandleWalk;
+            InputSystem.actions["DebugSpeedUp"].started += HandleSpeedUp;
+            InputSystem.actions["DebugSlowDown"].started += HandleSlowDown;
+        }
+
+        private void OnDestroy()
+        {
+            InputSystem.actions["Walk"].performed -= HandleWalk;
+            InputSystem.actions["Walk"].canceled -= HandleWalk;
+            InputSystem.actions["DebugSpeedUp"].started -= HandleSpeedUp;
+            InputSystem.actions["DebugSlowDown"].started -= HandleSlowDown;
+        }
+
+        private void HandleSpeedUp(InputAction.CallbackContext context)
+        {
+            Time.timeScale *= 2;
+        }
+        
+        private void HandleSlowDown(InputAction.CallbackContext context)
+        {
+            Time.timeScale *= 0.5f;
         }
 
         private void Update()
         {
             _targetVelocity.y = Mathf.Clamp(_inputDirection.x * rotateSpeed, -rotateSpeed, rotateSpeed);//Lmao
             _targetVelocity.x = Mathf.Clamp(_inputDirection.y * moveSpeed, -moveSpeed, moveSpeed);
-            _velocity = Vector3.MoveTowards(_velocity, _targetVelocity, acceleration * Time.deltaTime);
+            _velocity.x = Mathf.MoveTowards(_velocity.x, _targetVelocity.x, moveAccel * Time.deltaTime);
+            _velocity.y = Mathf.MoveTowards(_velocity.y, _targetVelocity.y, rotateAccel * Time.deltaTime);
             
-            transform.Rotate(new Vector3(0,_velocity.y, 0));
+            transform.Rotate(new Vector3(0,_velocity.y * Time.deltaTime, 0));
             controller.SimpleMove(this.transform.forward * _velocity.x);
             float forwardPercent = Mathf.Abs(_velocity.x) / moveSpeed;
             float rotatePercent = Mathf.Abs(_velocity.y) / rotateSpeed;
