@@ -26,6 +26,8 @@ namespace DefaultNamespace
 
         private void Start()
         {
+            moveSpeed *= transform.lossyScale.magnitude;
+            moveAccel *= transform.lossyScale.magnitude;
             _camera = Camera.main;
             InputSystem.actions["Walk"].performed += HandleWalk;
             InputSystem.actions["Walk"].canceled += HandleWalk;

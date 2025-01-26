@@ -578,7 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 4607871156891924671}
   moveSpeed: 2
-  rotateSpeed: 100
+  rotateSpeed: 200
   rotateAccel: 1000
   moveAccel: 25
   treadAudioEmitter: {fileID: 4081202357651516644}
