@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
     public float range = 5;
     public float radius = 1;
     public float maxWeight = 1;
+    public PlayerAnimation.RobotFace emotion;
 
     public void Interact()
     {

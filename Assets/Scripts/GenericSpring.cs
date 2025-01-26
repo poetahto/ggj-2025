@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Springs/SpringData")]
+[CreateAssetMenu(menuName = "Springs/FloatSpring")]
 public class GenericSpring : ScriptableObject{
     public float springForce;
     public float curr;
