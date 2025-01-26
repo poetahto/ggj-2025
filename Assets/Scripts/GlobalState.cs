@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
+    public enum GameState
+    {
+        Intro, Playing,
+    }
+    
     public class GlobalState : MonoBehaviour
     {
         [SerializeField] private CanvasGroup fadeScreen;
@@ -14,11 +19,12 @@ namespace DefaultNamespace
 
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
-        
+
+        public GameState GameState { get; set; } = GameState.Intro;
         public int EnergyCount { get; private set; }
         public bool IsTransitioning { get; set; }
-        public string RespawnScene { get; set; }
-        public string RespawnId { get; set; }
+        public string RespawnScene { get; set; } = "bio1";
+        public string RespawnId { get; set; } = "Bio1Respawn";
 
         public void Respawn()
         {
@@ -35,6 +41,7 @@ namespace DefaultNamespace
         private IEnumerator RespawnCoroutine()
         {
             IsTransitioning = true;
+            textBox.Hide();
             yield return StartCoroutine(FadeTo(1));
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
             EnergyCount = 4;
@@ -57,6 +64,7 @@ namespace DefaultNamespace
         private IEnumerator WarpCoroutine(string targetScene, string targetId)
         {
             IsTransitioning = true;
+            textBox.Hide();
             yield return StartCoroutine(FadeTo(1));
             yield return StartCoroutine(LoadSceneAtWarp(targetScene, targetId));
             yield return StartCoroutine(FadeTo(0));

@@ -41,7 +41,7 @@ namespace DefaultNamespace
             yield return StartCoroutine(FadeTo(0));
             display.maxVisibleCharacters = 0;
             display.text = text;
-            canvasGroup.alpha = 1;
+            yield return StartCoroutine(FadeTo(1));
 
             while (display.maxVisibleCharacters < text.Length)
             {
