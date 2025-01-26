@@ -281,7 +281,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{a7172c71-a9a8-46da-9b10-902891eb6cf1}" />
-	<object class="SpatialiserEffect" id="{f9e53566-f260-4b73-a737-13687b38d2d7}" />
+	<object class="SpatialiserEffect" id="{f9e53566-f260-4b73-a737-13687b38d2d7}">
+		<property name="panBlend">
+			<value>0.529999971</value>
+		</property>
+	</object>
 	<object class="AutomationCurve" id="{ca8cbca7-d1de-4cdb-b025-baa0521a1b5a}">
 		<relationship name="parameter">
 			<destination>{d70be91c-77d6-431c-999b-4ab1cbe628b5}</destination>
