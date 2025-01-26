@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{874281a9-3d97-4c85-9169-6e19561bf24d}">
+		<property name="assetPath">
+			<value>Biosphere 1 v1 - Sprakley - Trimmed.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>122.18181250000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5de03fe7-c2f8-4ca3-909d-626e6e761fe0}</destination>
+		</relationship>
+	</object>
+</objects>

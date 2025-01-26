@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d74e540f-be29-454b-b46c-fc470fe227cf}">
+		<property name="assetPath">
+			<value>Biosphere 1 v1 - Piano Comp.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>122.18181250000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5de03fe7-c2f8-4ca3-909d-626e6e761fe0}</destination>
+		</relationship>
+	</object>
+</objects>
