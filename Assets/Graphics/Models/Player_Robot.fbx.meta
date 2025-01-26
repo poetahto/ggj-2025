@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Rubber
+    second: {fileID: 2100000, guid: 9883ea99854ea51489af5f128d8996a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Steel
     second: {fileID: 2100000, guid: 62129f93baac8e546a205d0e1feb61f3, type: 2}
   - first:
