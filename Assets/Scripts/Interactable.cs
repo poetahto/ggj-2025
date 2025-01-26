@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
         onInteract.Invoke();
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, range);
         Gizmos.DrawWireSphere(transform.position, radius);

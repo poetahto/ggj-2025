@@ -8,6 +8,7 @@ namespace DefaultNamespace
     public class TextBox : MonoBehaviour
     {
         public TMP_Text display;
+        public CanvasGroup canvasGroup;
         public float fadeTime = 0.25f;
         public float characterDelay = 0.1f;
         
@@ -40,7 +41,7 @@ namespace DefaultNamespace
             yield return StartCoroutine(FadeTo(0));
             display.maxVisibleCharacters = 0;
             display.text = text;
-            display.alpha = 1;
+            canvasGroup.alpha = 1;
 
             while (display.maxVisibleCharacters < text.Length)
             {
@@ -52,17 +53,17 @@ namespace DefaultNamespace
         private IEnumerator FadeTo(float alpha)
         {
             float elapsed = 0;
-            float initial = display.alpha;
+            float initial = canvasGroup.alpha;
             
             while (elapsed <= fadeTime)
             {
                 elapsed += Time.deltaTime;
                 float t = Mathf.Clamp01(elapsed / fadeTime);
-                display.alpha = Mathf.Lerp(initial, alpha, t);
+                canvasGroup.alpha = Mathf.Lerp(initial, alpha, t);
                 yield return null;
             }
 
-            display.alpha = alpha;
+            canvasGroup.alpha = alpha;
         }
     }
 }
