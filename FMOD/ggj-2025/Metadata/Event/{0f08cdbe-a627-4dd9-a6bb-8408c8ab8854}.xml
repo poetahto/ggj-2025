@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{0f08cdbe-a627-4dd9-a6bb-8408c8ab8854}">
 		<property name="name">
 			<value>Wind_High_Pitch</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{cfb0d10c-6e4a-4152-8cb5-11f414a281d1}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{bd23887b-97b6-46b9-8029-c21145999533}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{eaf4c3bb-3dbe-4fea-aa23-8c4dab7f0115}">
