@@ -133,7 +133,7 @@ Material:
     - _SrcBlend: 5
     - _SrcBlendAlpha: 1
     - _Surface: 1
-    - _UseCutout: 0
+    - _UseCutout: 1
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 0
