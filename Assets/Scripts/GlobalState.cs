@@ -57,8 +57,11 @@ namespace DefaultNamespace
         public void RefillPower()
         {
             OnRefillEnergy?.Invoke();
-            EnergyCount = 6;
+            EnergyCount = 5;
             RuntimeManager.PlayOneShot("event:/Robot_Recharge");
+            GameObject player = GameObject.FindWithTag("Player");
+            GameObject refillPrefab = Resources.Load<GameObject>("RefillEffect");
+            Instantiate(refillPrefab, player.transform.position, Quaternion.identity);
         }
 
         public void Warp(string targetScene, string targetId)
@@ -81,7 +84,6 @@ namespace DefaultNamespace
             _deathInfo.Add(deathInfo);
             bsod.SetActive(true);
             textBox.Hide();
-            Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
             RuntimeManager.PlayOneShot("event:/Computer_Boot_Up");
             yield return new WaitForSeconds(1.64f);
@@ -123,9 +125,17 @@ namespace DefaultNamespace
             yield return StartCoroutine(FadeTo(0));
 
             // pop a bubble after a little bit
-            yield return new WaitForSeconds(1);
-            EnergyCount--;
-            OnUseEnergy?.Invoke();
+            if (targetScene != RespawnScene)
+            {
+                yield return new WaitForSeconds(1);
+                EnergyCount--;
+                OnUseEnergy?.Invoke();
+            }
+            else // restore bubbles
+            {
+                yield return new WaitForSeconds(1);
+                RefillPower();
+            }
             
             IsTransitioning = false;
         }
@@ -137,7 +147,7 @@ namespace DefaultNamespace
             
             while (elapsed < fadeDuration)
             {
-                elapsed += Time.unscaledDeltaTime;
+                elapsed += Time.deltaTime;
                 float t = elapsed / fadeDuration;
                 fadeScreen.alpha = Mathf.Lerp(initialValue, alpha, t);
                 yield return null;
@@ -174,7 +184,7 @@ namespace DefaultNamespace
                         float remaining = musicFade;
                         while (remaining > 0)
                         {
-                            remaining -= Time.unscaledDeltaTime;
+                            remaining -= Time.deltaTime;
                             _musicInstance.setVolume(Mathf.Clamp01(remaining / musicFade));
                             yield return null;
                         }
@@ -199,7 +209,7 @@ namespace DefaultNamespace
                 float remaining = musicFade;
                 while (remaining > 0)
                 {
-                    remaining -= Time.unscaledDeltaTime;
+                    remaining -= Time.deltaTime;
                     _musicInstance.setVolume(Mathf.Clamp01(remaining / musicFade));
                     yield return null;
                 }

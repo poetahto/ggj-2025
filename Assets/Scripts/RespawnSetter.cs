@@ -24,6 +24,7 @@ public class RespawnSetter : MonoBehaviour
                 state.RespawnId = respawnId;
                 state.RespawnScene = respawnScene;
                 ChangeScreen(_activeMaterial);
+                state.RefillPower();
             }
             else
             {
@@ -46,16 +47,7 @@ public class RespawnSetter : MonoBehaviour
         GlobalState state = GlobalState.GetInstance();
 
         if (state.UnlockedRespawns.Contains(respawnId))
-        {
-            // is unlocked AND is active
-            if (state.RespawnId == respawnId)
-            {
-                state.RefillPower();
-                ChangeScreen(_activeMaterial);
-            }
-            else // is unlocked, but not active
-                ChangeScreen(_inactiveMaterial);
-        }
+            ChangeScreen(state.RespawnId == respawnId ? _activeMaterial : _inactiveMaterial);
         else // hasn't been unlocked yet - locked
             ChangeScreen(_lockedMaterial);
     }
