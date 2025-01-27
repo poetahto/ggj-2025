@@ -147,37 +147,6 @@ MonoBehaviour:
   id: Bio1Respawn
   warpCutscene: {fileID: 649133336}
   isIntroWarp: 1
---- !u!114 &889994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 2012529740
-      Data2: 1289727046
-      Data3: -1115255671
-      Data4: 1476359097
-    Path: snapshot:/Glitch
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &3648101
 GameObject:
   m_ObjectHideFlags: 0
@@ -55665,9 +55634,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2219402123126967633, guid: b09ac94d714cafd9f983fbf4328d729d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 889993}
-    - targetCorrespondingSourceObject: {fileID: 2219402123126967633, guid: b09ac94d714cafd9f983fbf4328d729d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 889994}
   m_SourcePrefab: {fileID: 100100000, guid: b09ac94d714cafd9f983fbf4328d729d, type: 3}
 --- !u!43 &1452833446
 Mesh:

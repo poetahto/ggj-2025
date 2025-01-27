@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{093aecb7-b4a8-4a70-b0d0-8bf24642f2ed}">
+		<property name="assetPath">
+			<value>Jupiter Drone8.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>132.71516666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5de03fe7-c2f8-4ca3-909d-626e6e761fe0}</destination>
+		</relationship>
+	</object>
+</objects>

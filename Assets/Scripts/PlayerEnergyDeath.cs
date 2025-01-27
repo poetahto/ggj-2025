@@ -52,8 +52,6 @@ namespace DefaultNamespace
         private IEnumerator DeathCoroutine()
         {
             float remaining = pauseDurationPostDeath;
-            EventInstance instance = RuntimeManager.CreateInstance("snapshot:/Glitch");
-            instance.start();
 
             while (remaining >= 0)
             {
@@ -61,11 +59,10 @@ namespace DefaultNamespace
                 Time.timeScale = Mathf.Lerp(1, 0, t);
                 remaining -= Time.unscaledDeltaTime;
                 Shader.SetGlobalFloat("_GlitchProgress", t);
-                instance.setVolume(t);
                 yield return null;
             }
 
-            instance.stop(STOP_MODE.ALLOWFADEOUT);
+            Shader.SetGlobalFloat("_GlitchProgress", 0);
             GlobalState.GetInstance().Respawn();
         }
     }

@@ -183,7 +183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: fe5b42787ade2ee4caa043edb1d442f7, type: 3}
+  - {fileID: 2100000, guid: 69f706c01397ad240a70b7f3733949f3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1601,7 +1601,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 95588624cdd9f66d690de3c607ce0bb3, type: 2}
   - {fileID: 2100000, guid: 260eeee3555b3d94e9b68377c9a30667, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2027,9 +2026,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600d4dfa6562a01b6be1139890655ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutoutSize: 0.121
-  cutoutFade: 0.05
-  ditherSize: 1.06
+  cutoutSize: 0.137
+  cutoutFade: 0.12
+  ditherSize: 0.7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -74,6 +74,7 @@ namespace DefaultNamespace
             Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
             yield return new WaitForSeconds(2);
+            yield return StartCoroutine(InitializeScene(RespawnScene, RespawnId));
             EnergyCount = 5;
             OnRefillEnergy?.Invoke();
             bsod.SetActive(false);
@@ -81,6 +82,7 @@ namespace DefaultNamespace
             // play spawn animation
             WarpLocation warp = GetWarpLocation(RespawnId);
             textBox.SetText($"Fabricated B.A.R.T. Model {DeathCount + 2}", 1);
+            DeathCount++;
 
             if (warp != null && warp.HasWarpCutscene())
             {
@@ -98,6 +100,7 @@ namespace DefaultNamespace
             textBox.Hide();
             yield return StartCoroutine(FadeTo(1));
             yield return StartCoroutine(LoadSceneAtWarp(targetScene, targetId));
+            yield return StartCoroutine(InitializeScene(targetScene, targetId));
             yield return StartCoroutine(FadeTo(0));
 
             // pop a bubble after a little bit
@@ -134,7 +137,6 @@ namespace DefaultNamespace
         {
             yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
             yield return null; // allow things to initialize
-            yield return StartCoroutine(InitializeScene(targetScene, targetId));
         }
 
         private IEnumerator InitializeScene(string targetScene, string targetId)
