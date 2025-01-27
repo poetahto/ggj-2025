@@ -33,7 +33,7 @@ namespace DefaultNamespace
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
 
-        public int ProgressCounter { get; set; }
+        public int ProgressCounter { get; set; } = 2;
         public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
         public int EnergyCount { get; private set; } = 5;
@@ -79,6 +79,7 @@ namespace DefaultNamespace
             EnergyCount = 5;
             OnRefillEnergy?.Invoke();
             bsod.SetActive(false);
+            player = GameObject.FindWithTag("Player");
             
             // play spawn animation
             WarpLocation warp = GetWarpLocation(RespawnId);
@@ -88,7 +89,10 @@ namespace DefaultNamespace
             if (warp != null && warp.HasWarpCutscene())
             {
                 InputSystem.actions.FindActionMap("Player").Disable();
+                CharacterController controller = player.GetComponentInChildren<CharacterController>();
+                controller.enabled = false;
                 yield return StartCoroutine(warp.PlayCutsceneCoroutine());
+                controller.enabled = true;
                 InputSystem.actions.FindActionMap("Player").Enable();
             }
             
@@ -137,7 +141,7 @@ namespace DefaultNamespace
         private IEnumerator LoadSceneAtWarp(string targetScene, string targetId)
         {
             yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
-            yield return null; // allow things to initialize
+            yield return new WaitForSecondsRealtime(0.5f); // allow things to initialize
         }
 
         private IEnumerator InitializeScene(string targetScene, string targetId)
@@ -198,6 +202,10 @@ namespace DefaultNamespace
                 Vector3 pos = warp.transform.position;
                 Quaternion rot = warp.transform.rotation;
                 player.transform.SetPositionAndRotation(pos, rot);
+            }
+            else
+            {
+                print("failed");
             }
             
             // spawn bodies

@@ -7,7 +7,7 @@ namespace DefaultNamespace
         public int minimumProgress;
         public bool isActive;
 
-        private void Start()
+        private void Awake()
         {
             gameObject.SetActive(GlobalState.GetInstance().ProgressCounter >= minimumProgress ? isActive : !isActive);
         }
