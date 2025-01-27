@@ -34,7 +34,7 @@ namespace DefaultNamespace
         public event Action OnRefillEnergy;
 
         public List<string> UnlockedRespawns { get; set; } = new List<string> {"Bio1Respawn"};
-        public int ProgressCounter { get; set; } = 2;
+        public int ProgressCounter { get; set; }
         public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
         public int EnergyCount { get; private set; } = 5;

@@ -26366,13 +26366,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: lines.Array.data[0]
-      value: Catwalk Nu is temporarily closed to ensure the welfar of beloved Biodome
-        1.
+      value: "\"Catwalk Nu is temporarily closed to ensure the \nwelfare of beloved
+        Biodome 1.\"\t"
       objectReference: {fileID: 0}
     - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: lines.Array.data[1]
-      value: "Biodome 2 will be accessible via Junction 1. Sorry for the inconvenience
-        \n- Guardians"
+      value: "\"Biodome 2 will be accessible via Junction 1.\n Sorry for the inconvenience
+        - Guardians\""
       objectReference: {fileID: 0}
     - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: lines.Array.data[2]
@@ -26389,6 +26389,10 @@ PrefabInstance:
     - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: m_Name
       value: SignText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851821576215889171, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41524,8 +41528,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: lines.Array.data[1]
-      value: '"Recycling the parts of her starship our founder crafted this unison
-        of movement, machinery, and flora."'
+      value: "\"Recycling the parts of her starship, our founder crafted \nthis unison
+        of movement, machinery, and flora.\""
       objectReference: {fileID: 0}
     - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: lines.Array.data[2]
@@ -41542,6 +41546,10 @@ PrefabInstance:
     - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: m_Name
       value: PillarText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851821576215889171, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

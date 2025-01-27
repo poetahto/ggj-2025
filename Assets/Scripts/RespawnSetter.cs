@@ -29,7 +29,7 @@ public class RespawnSetter : MonoBehaviour
             else
             {
                 // unlocked and already active
-                state.textBox.SetText($"WELCOME HOME, B.A.R.T. MODEL {state.DeathCount}\n IT IS GOOD TO SEE YOU.", 1);
+                state.textBox.SetText($"WELCOME HOME, B.A.R.T. MODEL {state.DeathCount + 1}\n IT IS GOOD TO SEE YOU.", 1);
             }
         }
         else

@@ -10320,12 +10320,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "Congratulations guardians for bringing the information of the botanists'
-        successful tests to light. \r\n"
+      value: '"Congratulations guardians for bringing the information of the botanists''
+        successful tests to light. "
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[1]
-      value: 'Each of you will be rewarded with two days off of mandatory exertion. '
+      value: '"Each of you will be rewarded with two days off of mandatory exertion.
+        "'
       objectReference: {fileID: 0}
     - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
@@ -23299,30 +23302,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "The Botanists have outgrown their purpose allotted to them.  \r\n"
+      value: '"The Botanists have outgrown their purpose allotted to them. "
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[1]
-      value: Their further medlings have tainted the soil of Biodome 2.
+      value: '"Their further medlings have tainted the soil of Biodome 2."'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[2]
-      value: "Each of you must ensure the future of the station with a full quarantine
-        of Biodome 2. \r\r\n"
+      value: "\"Each of you must ensure the future of the station with a full quarantine
+        of Biodome 2. \"\r\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[3]
-      value: 'No inhabitant bar yourselves will be allowed to enter Biodome 2. '
+      value: '"No inhabitant bar yourselves will be allowed to enter Biodome 2. "'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[4]
-      value: "Order a limitation and do not lift it until I give the order. Override
-        code Gaia. \r\r\n"
+      value: "\"Order a limitation and do not lift it until I give the order. Override
+        code Gaia. \"\r\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[5]
-      value: We are all counting on you guardians. - May your efforts bear fruit.
-        -Captain.
+      value: '"We are all counting on you guardians. - May your efforts bear fruit.
+        -Captain."'
       objectReference: {fileID: 0}
     - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
@@ -25394,13 +25399,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[0]
-      value: Reports of Guardians on duty in Biosphere 2 are now required at the
-        end of each day.
+      value: '"Reports of Guardians on duty in Biosphere 2 are now required at the
+        end of each day."'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[1]
-      value: The progress of the botanists project is of the utmost important to
-        the future of Furrina station. -Captain
+      value: '"The progress of the botanists project is of the utmost important to
+        the future of Furrina station. -Captain"'
       objectReference: {fileID: 0}
     - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
@@ -42294,16 +42299,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[0]
-      value: A handful of the Botanist's are holding resentment due to their recent
-        reassignments.
+      value: '"A handful of the Botanist''s are holding resentment due to their recent
+        reassignments."'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[1]
-      value: Your cooperation in keeping the projects transparent is necessary.
+      value: '"Your cooperation in keeping the projects transparent is necessary."'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[2]
-      value: May your efforts bear fruit. -Captain
+      value: '"May your efforts bear fruit. -Captain"'
       objectReference: {fileID: 0}
     - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
@@ -44056,17 +44061,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "The continued reports have been pleasant but I must remind each of
-        you,\r\r"
+      value: "\"The continued reports have been pleasant but I must remind each of
+        you,\"\r\r"
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[1]
-      value: only report pertinent information regarding the testing being held in
-        biodome 2.
+      value: '"only report pertinent information regarding the testing being held
+        in biodome 2."'
       objectReference: {fileID: 0}
     - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: lines.Array.data[2]
-      value: May the fruit of your labours be ripe -Captain
+      value: '"May the fruit of your labours be ripe -Captain"'
       objectReference: {fileID: 0}
     - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
