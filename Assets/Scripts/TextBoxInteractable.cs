@@ -6,6 +6,7 @@ namespace DefaultNamespace
     public class TextBoxInteractable : MonoBehaviour
     {
         public float timeBetweenLines = 1.0f;
+        [Multiline]
         public string[] lines;
 
         private float _elapsed;
