@@ -79,10 +79,10 @@ public class PlayerAnimation : MonoBehaviour
 
         treadL.material.mainTextureOffset -= new Vector2(0, movementController._velocity.x + movementController._velocity.y) * 4 * Time.deltaTime;
         treadR.material.mainTextureOffset -= new Vector2(0, movementController._velocity.x - movementController._velocity.y) * 4 * Time.deltaTime;
-        if(!movementController.controller.isGrounded){
-            trackTrailL.emitting = false;
-            trackTrailR.emitting = false;
-        }
+        trackTrailL.emitting = movementController.controller.isGrounded;
+        trackTrailR.emitting = movementController.controller.isGrounded;
+
+        //Physics.Raycast(new Ray(treadL.transform.position, -treadL.transform.up), out , 0.25f, ~LayerMask.NameToLayer("Player"));
         //trackTrailL.emitting = Physics.Raycast(new Ray(treadL.transform.position, -treadL.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
         //trackTrailR.emitting = Physics.Raycast(new Ray(treadR.transform.position, -treadR.transform.up), 0.25f, LayerMask.NameToLayer("Snow"));
 
