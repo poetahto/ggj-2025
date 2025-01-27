@@ -33,10 +33,10 @@ namespace DefaultNamespace
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
 
-        public int ProgressCounter { get; set; }
+        public int ProgressCounter { get; set; } = 2;
         public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
-        public int EnergyCount { get; private set; } = 1;
+        public int EnergyCount { get; private set; } = 5;
         public bool IsTransitioning { get; set; }
         public string RespawnScene { get; set; } = "bio1";
         public string RespawnId { get; set; } = "Bio1Respawn";
@@ -55,7 +55,7 @@ namespace DefaultNamespace
         public void RefillPower()
         {
             OnRefillEnergy?.Invoke();
-            EnergyCount = 5;
+            EnergyCount = 6;
             RuntimeManager.PlayOneShot("event:/Robot_Recharge");
         }
 
@@ -152,8 +152,10 @@ namespace DefaultNamespace
         
         private IEnumerator LoadSceneAtWarp(string targetScene, string targetId)
         {
-            yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
-            yield return new WaitForSecondsRealtime(1); // allow things to initialize
+            // yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
+            // yield return new WaitForSecondsRealtime(1); // allow things to initialize
+            SceneManager.LoadScene(targetScene);
+            yield return null;
         }
 
         private IEnumerator InitializeScene(string targetScene, string targetId)

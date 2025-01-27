@@ -1,9 +1,6 @@
 ﻿using System.Collections;
-using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 namespace DefaultNamespace
 {
@@ -30,22 +27,21 @@ namespace DefaultNamespace
 
             switch (state.EnergyCount)
             {
-                case 5:
-                    textBox.SetText("Energy refilled.", 1);
-                    break;
-                case 3:
-                    textBox.SetText("Energy: 50%", 1);
+                case 4:
                     RuntimeManager.PlayOneShot("event:/Robot_Health_1");
                     break;
-                case 2:
+                case 3:
                     RuntimeManager.PlayOneShot("event:/Robot_Health_2");
+                    textBox.SetText("Energy: 50%", 1);
                     break;
-                case 1:
-                    textBox.SetText("Energy: Critical", 1);
+                case 2:
                     RuntimeManager.PlayOneShot("event:/Robot_Health_3");
                     break;
-                case <= 0:
+                case 1:
                     RuntimeManager.PlayOneShot("event:/Robot_Health_4");
+                    textBox.SetText("Energy: Critical", 1);
+                    break;
+                case <= 0:
                     StartCoroutine(DeathCoroutine());
                     break;
             }
