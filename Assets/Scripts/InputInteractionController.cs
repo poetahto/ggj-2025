@@ -26,7 +26,7 @@ public class InputInteractionController : MonoBehaviour
             bool isClosest = distance < nearestDistance;
             bool isInRange = distance < interactable.range * interactable.range;
             
-            if (isClosest && isInRange)
+            if (isClosest && isInRange && interactable.IsInteractable)
             {
                 nearestDistance = distance;
                 targetInteractable = interactable;

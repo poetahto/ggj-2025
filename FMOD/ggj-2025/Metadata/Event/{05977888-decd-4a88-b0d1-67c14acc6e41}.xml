@@ -5,7 +5,7 @@
 			<value>Datapad_Interact</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{6d961a49-4014-47fe-b1d3-e6046d1244d2}">
 		<relationship name="effects">
 			<destination>{50f02ca4-09ec-4603-b348-d3441765d770}</destination>
-			<destination>{daec746b-8d8f-46aa-ac3a-cb75f3fc35b8}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f0f11d5c-ae17-40be-bd15-4fc5ead4fb8c}" />
@@ -128,6 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{9fa5490f-7b2f-4435-8498-8c1f79bc4194}" />
 	<object class="MixerBusFader" id="{50f02ca4-09ec-4603-b348-d3441765d770}" />
-	<object class="SpatialiserEffect" id="{daec746b-8d8f-46aa-ac3a-cb75f3fc35b8}" />
 	<object class="MixerBusFader" id="{4a8597dc-d4b1-41e3-ba80-6bfbc45f7868}" />
 </objects>

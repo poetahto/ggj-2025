@@ -33,13 +33,14 @@ namespace DefaultNamespace
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
 
+        public List<string> UnlockedRespawns { get; set; } = new List<string> {"Bio1Respawn"};
         public int ProgressCounter { get; set; } = 2;
         public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
         public int EnergyCount { get; private set; } = 5;
         public bool IsTransitioning { get; set; }
-        public string RespawnScene { get; set; } = "bio1";
-        public string RespawnId { get; set; } = "Bio1Respawn";
+        public string RespawnScene { get; set; }
+        public string RespawnId { get; set; }
 
         private void Start()
         {
@@ -50,6 +51,7 @@ namespace DefaultNamespace
         {
             if (RespawnScene != string.Empty && RespawnId != string.Empty && !IsTransitioning)
                 StartCoroutine(RespawnCoroutine());
+            else Application.Quit();
         }
 
         public void RefillPower()

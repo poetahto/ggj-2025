@@ -6223,80 +6223,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 52913313}
   m_LocalEulerAnglesHint: {x: 0, y: 96.408, z: 0}
---- !u!1001 &304586753
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.1016144
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.186275
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.2290907
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.74888
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6627056
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 83.013
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[0]
-      value: "Congratulations guardians for bringing the information of the botanists'
-        successful tests to light. \r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[1]
-      value: 'Each of you will be rewarded with two days off of mandatory exertion. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: range
-      value: 6.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_Name
-      value: Interactable (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
 --- !u!1 &312766185
 GameObject:
   m_ObjectHideFlags: 0
@@ -10380,22 +10306,75 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1946645126}
+    - target: {fileID: 84397250584162067, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: timeBetweenLines
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "Congratulations guardians for bringing the information of the botanists'
+        successful tests to light. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 'Each of you will be rewarded with two days off of mandatory exertion. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1165423811}
     - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1165423811}
+    - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868370483998271115, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1946645126}
     - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 776269934}
+    - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417806369378630041, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1247310934}
     - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 977918317}
+    - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215790358931619952, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1165423811}
+    - target: {fileID: 5248044344309677414, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 977918317}
     - target: {fileID: 5257390367784510221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1652318810}
+      objectReference: {fileID: 776269934}
     - target: {fileID: 5502663557722184580, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5176952
@@ -10436,26 +10415,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5622292259271270748, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1247310934}
     - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1247310934}
+    - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     - target: {fileID: 7583402270723175113, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 776269934}
+    - target: {fileID: 7786136819127553879, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1946645126}
     - target: {fileID: 8044336114252724335, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 344291549}
+      objectReference: {fileID: 1616666367}
     - target: {fileID: 8261337385224582775, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1616666367}
+    - target: {fileID: 8733345068874948607, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 977918317}
     - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1616666367}
+    - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15075,7 +15074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: lines.Array.data[0]
-      value: RESTORED BIODOME 3 B.A.R.T FABRICATOR
+      value: 'QUARANTINE OVERRIDE : '
       objectReference: {fileID: 0}
     - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: range
@@ -15111,7 +15110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       propertyPath: m_Name
-      value: Interactable (5)
+      value: Button Pre Advance
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15120,6 +15119,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
       insertIndex: -1
       addedObject: {fileID: 731388470}
+    - targetCorrespondingSourceObject: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 731388474}
   m_SourcePrefab: {fileID: 100100000, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
 --- !u!1 &731388469 stripped
 GameObject:
@@ -15139,6 +15141,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressCount: 2
+  onAdvance:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &731388474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731388469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82142c14a7d475995566222fe83fc68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumProgress: 2
+  isActive: 0
 --- !u!1 &743071686
 GameObject:
   m_ObjectHideFlags: 0
@@ -23266,22 +23285,93 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 928838407}
+    - target: {fileID: 84397250584162067, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: timeBetweenLines
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "The Botanists have outgrown their purpose allotted to them.  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Their further medlings have tainted the soil of Biodome 2.
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: "Each of you must ensure the future of the station with a full quarantine
+        of Biodome 2. \r\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'No inhabitant bar yourselves will be allowed to enter Biodome 2. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: "Order a limitation and do not lift it until I give the order. Override
+        code Gaia. \r\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: We are all counting on you guardians. - May your efforts bear fruit.
+        -Captain.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 431513063}
     - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 431513063}
+    - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868370483998271115, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 928838407}
     - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1182576150}
+    - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417806369378630041, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 515943623}
     - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1629876794}
+    - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215790358931619952, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 431513063}
+    - target: {fileID: 5248044344309677414, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1629876794}
     - target: {fileID: 5257390367784510221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1652318810}
+      objectReference: {fileID: 1182576150}
     - target: {fileID: 5502663557722184580, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.811248
@@ -23322,26 +23412,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5622292259271270748, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 515943623}
     - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 515943623}
+    - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     - target: {fileID: 7583402270723175113, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1182576150}
+    - target: {fileID: 7786136819127553879, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 928838407}
     - target: {fileID: 8044336114252724335, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 344291549}
+      objectReference: {fileID: 896137621}
     - target: {fileID: 8261337385224582775, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 896137621}
+    - target: {fileID: 8733345068874948607, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1629876794}
     - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 896137621}
+    - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23865,84 +23975,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &1119619874
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -20.65198
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11.508696
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.65389234
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7565876
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -98.329
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[0]
-      value: A handful of the Botanist's are holding resentment due to their recent
-        reassignments.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[1]
-      value: Your cooperation in keeping the projects transparent is necessary.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[2]
-      value: May your efforts bear fruit. -Captain
-      objectReference: {fileID: 0}
-    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: range
-      value: 6.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_Name
-      value: Interactable (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
 --- !u!43 &1120212531
 Mesh:
   m_ObjectHideFlags: 0
@@ -25348,22 +25380,76 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 779917840}
+    - target: {fileID: 84397250584162067, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: timeBetweenLines
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Reports of Guardians on duty in Biosphere 2 are now required at the
+        end of each day.
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: The progress of the botanists project is of the utmost important to
+        the future of Furrina station. -Captain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1787177498}
     - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1787177498}
+    - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868370483998271115, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 779917840}
     - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1568714072}
+    - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417806369378630041, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1511464871}
     - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 952094237}
+    - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215790358931619952, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1787177498}
+    - target: {fileID: 5248044344309677414, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 952094237}
     - target: {fileID: 5257390367784510221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1652318810}
+      objectReference: {fileID: 1568714072}
     - target: {fileID: 5502663557722184580, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.146007
@@ -25404,26 +25490,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5622292259271270748, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1511464871}
     - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1511464871}
+    - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     - target: {fileID: 7583402270723175113, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1568714072}
+    - target: {fileID: 7786136819127553879, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 779917840}
     - target: {fileID: 8044336114252724335, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 344291549}
+      objectReference: {fileID: 2112964716}
     - target: {fileID: 8261337385224582775, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2112964716}
+    - target: {fileID: 8733345068874948607, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 952094237}
     - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2112964716}
+    - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30087,98 +30193,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &1347851945
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.834274
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.8510714
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.52505
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -296.657
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[0]
-      value: "The Botanists have outgrown their purpose allotted to them.  \r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[1]
-      value: Their further medlings have tainted the soil of Biodome 2.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[2]
-      value: "Each of you must ensure the future of the station with a full quarantine
-        of Biodome 2. \r\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[3]
-      value: 'No inhabitant bar yourselves will be allowed to enter Biodome 2. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[4]
-      value: "Order a limitation and do not lift it until I give the order. Override
-        code Gaia. \r\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[5]
-      value: We are all counting on you guardians. - May your efforts bear fruit.
-        -Captain.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: range
-      value: 6.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_Name
-      value: Interactable (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
 --- !u!43 &1349257207
 Mesh:
   m_ObjectHideFlags: 0
@@ -37812,81 +37826,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1001 &1682065509
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.97287256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.23134197
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 26.752
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[0]
-      value: Reports of Guardians on duty in Biosphere 2 are now required at the
-        end of each day.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[1]
-      value: The progress of the botanists project is of the utmost important to
-        the future of Furrina station. -Captain
-      objectReference: {fileID: 0}
-    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: range
-      value: 6.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_Name
-      value: Interactable (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
 --- !u!1 &1686897447
 GameObject:
   m_ObjectHideFlags: 0
@@ -38959,85 +38898,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1001 &1773328928
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.112678
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 15.879894
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 13.533414
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[0]
-      value: "The continued reports have been pleasant but I must remind each of
-        you,\r\r"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[1]
-      value: only report pertinent information regarding the testing being held in
-        biodome 2.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: lines.Array.data[2]
-      value: May the fruit of your labours be ripe -Captain
-      objectReference: {fileID: 0}
-    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: range
-      value: 6.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
-      propertyPath: m_Name
-      value: Interactable
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
 --- !u!1001 &1773370371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40523,6 +40383,121 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &1824753802
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.8501673
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.297098
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8101654
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363511274745841927, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051487714937099197, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 'QUARANTINE OVERRIDE : 1/2 VOTES'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: range
+      value: 6.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Advance
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DefaultNamespace.ProgressAdvancer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177401278480025668, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      propertyPath: m_Name
+      value: Button Post Advance
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1824753804}
+  m_SourcePrefab: {fileID: 100100000, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+--- !u!1 &1824753803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3576374717157713554, guid: 8690ca8021b5d4a4e900cb1c4391f095, type: 3}
+  m_PrefabInstance: {fileID: 1824753802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1824753804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824753803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82142c14a7d475995566222fe83fc68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumProgress: 2
+  isActive: 1
 --- !u!43 &1825647759
 Mesh:
   m_ObjectHideFlags: 0
@@ -42305,22 +42280,79 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1825647759}
+    - target: {fileID: 84397250584162067, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: timeBetweenLines
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: A handful of the Botanist's are holding resentment due to their recent
+        reassignments.
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Your cooperation in keeping the projects transparent is necessary.
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: May your efforts bear fruit. -Captain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 745797085}
     - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 745797085}
+    - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868370483998271115, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1825647759}
     - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1053310393}
+    - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417806369378630041, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 62342907}
     - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 473084083}
+    - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215790358931619952, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 745797085}
+    - target: {fileID: 5248044344309677414, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 473084083}
     - target: {fileID: 5257390367784510221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1568714072}
+      objectReference: {fileID: 1053310393}
     - target: {fileID: 5502663557722184580, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.24
@@ -42361,26 +42393,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5622292259271270748, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 62342907}
     - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 62342907}
+    - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     - target: {fileID: 7583402270723175113, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1053310393}
+    - target: {fileID: 7786136819127553879, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1825647759}
     - target: {fileID: 8044336114252724335, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 2112964716}
+      objectReference: {fileID: 441436042}
     - target: {fileID: 8261337385224582775, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 441436042}
+    - target: {fileID: 8733345068874948607, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 473084083}
     - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 441436042}
+    - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43990,15 +44042,73 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 495788062}
+    - target: {fileID: 84397250584162067, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: timeBetweenLines
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "The continued reports have been pleasant but I must remind each of
+        you,\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: only report pertinent information regarding the testing being held in
+        biodome 2.
+      objectReference: {fileID: 0}
+    - target: {fileID: 193361202514073367, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: May the fruit of your labours be ripe -Captain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691011895704107043, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1764858811}
     - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1764858811}
+    - target: {fileID: 2479973570488513483, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868370483998271115, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 495788062}
     - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1652318810}
+    - target: {fileID: 2964354294204383582, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417806369378630041, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 664047629}
     - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 251642929}
+    - target: {fileID: 3787175740214578360, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215790358931619952, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1764858811}
+    - target: {fileID: 5248044344309677414, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 251642929}
@@ -44046,14 +44156,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5622292259271270748, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 664047629}
     - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 664047629}
+    - target: {fileID: 5841058196519382221, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     - target: {fileID: 7583402270723175113, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1652318810}
+    - target: {fileID: 7786136819127553879, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 495788062}
     - target: {fileID: 8044336114252724335, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -44062,10 +44184,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 344291549}
+    - target: {fileID: 8733345068874948607, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 251642929}
     - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 344291549}
+    - target: {fileID: 9005287409948202165, guid: 752cee74f8c6cad419ea2d08bd3b0cba, type: 3}
+      propertyPath: m_VersionIndex
+      value: 762
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46530,10 +46660,6 @@ SceneRoots:
   - {fileID: 1092087257}
   - {fileID: 1168257640}
   - {fileID: 1933134675}
-  - {fileID: 1773328928}
-  - {fileID: 304586753}
-  - {fileID: 1347851945}
-  - {fileID: 1682065509}
-  - {fileID: 1119619874}
   - {fileID: 1773370371}
   - {fileID: 731388468}
+  - {fileID: 1824753802}

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
@@ -9,10 +10,19 @@ public class Interactable : MonoBehaviour
     public float radius = 1;
     public float maxWeight = 1;
     public PlayerAnimation.RobotFace emotion;
+    [SerializeField] private bool defaultIsInteractable = true;
+    
+    public bool IsInteractable { get; set; }
+
+    private void Awake()
+    {
+        IsInteractable = defaultIsInteractable;
+    }
 
     public void Interact()
     {
-        onInteract.Invoke();
+        if (IsInteractable)
+            onInteract.Invoke();
     }
 
     private void OnDrawGizmosSelected()
