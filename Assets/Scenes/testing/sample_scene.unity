@@ -349,7 +349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: test
   warpCutscene: {fileID: 0}
-  isIntroWarp: 0
 --- !u!4 &225445844
 Transform:
   m_ObjectHideFlags: 0
@@ -2027,9 +2026,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600d4dfa6562a01b6be1139890655ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutoutSize: 0
-  cutoutFade: 0.53
-  ditherSize: 2.47
+  cutoutSize: 0.137
+  cutoutFade: 0.12
+  ditherSize: 0.7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

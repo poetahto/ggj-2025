@@ -113,15 +113,15 @@ Material:
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
     - _FogDepth: 1
-    - _FogMax: 2
-    - _FogMin: 0
-    - _FogStrength: 1.55
+    - _FogMax: 1
+    - _FogMin: 0.76
+    - _FogStrength: 370.1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.67
+    - _Opacity: 0.5
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -133,13 +133,12 @@ Material:
     - _SrcBlend: 5
     - _SrcBlendAlpha: 1
     - _Surface: 1
-    - _UseCutout: 0
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _BaseColor: {r: 0.509434, g: 0.24913901, b: 0, a: 1}
+    - _BaseColor: {r: 0.509434, g: 0.24913904, b: 0, a: 0.33333334}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Direction: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
