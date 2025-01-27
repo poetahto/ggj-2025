@@ -23,24 +23,14 @@ MonoBehaviour:
       Path: event:/Biosphere 1 - MUS
     parameterId: Intensity
     parameterValue: 1
-  - sceneName: bio2_bio1
+  - sceneName: bio1_power
     eventReference:
       Guid:
-        Data1: 1053848775
-        Data2: 1138303983
-        Data3: -563917424
-        Data4: 2037331667
-      Path: event:/Biosphere 1 - MUS
-    parameterId: Intensity
-    parameterValue: 0
-  - sceneName: junction_bio1
-    eventReference:
-      Guid:
-        Data1: 1053848775
-        Data2: 1138303983
-        Data3: -563917424
-        Data4: 2037331667
-      Path: event:/Biosphere 1 - MUS
+        Data1: -2004625072
+        Data2: 1091533033
+        Data3: -1088730212
+        Data4: -213219064
+      Path: event:/Ominous Drone - MUS
     parameterId: Intensity
     parameterValue: 0
   - sceneName: bio2
@@ -53,7 +43,17 @@ MonoBehaviour:
       Path: event:/Biosphere 2 - MUS
     parameterId: Intensity
     parameterValue: 1
-  - sceneName: junction_bio2
+  - sceneName: bio2_bio1
+    eventReference:
+      Guid:
+        Data1: 1053848775
+        Data2: 1138303983
+        Data3: -563917424
+        Data4: 2037331667
+      Path: event:/Biosphere 1 - MUS
+    parameterId: Intensity
+    parameterValue: 0
+  - sceneName: bio2_lab
     eventReference:
       Guid:
         Data1: 1786299830
@@ -72,8 +72,148 @@ MonoBehaviour:
         Data4: 2019779316
       Path: event:/Biosphere 2 - MUS
     parameterId: Intensity
+    parameterValue: 0.5
+  - sceneName: bio3
+    eventReference:
+      Guid:
+        Data1: -1109145679
+        Data2: 1117746803
+        Data3: -1589385541
+        Data4: -1441782373
+      Path: event:/Quarters_Ambience
+    parameterId: 
     parameterValue: 0
-  - sceneName: bio2_lab
+  - sceneName: bio3_landing
+    eventReference:
+      Guid:
+        Data1: 1456198502
+        Data2: 1220028731
+        Data3: 1486530709
+        Data4: -1251258641
+      Path: event:/Cave_Ambience 2
+    parameterId: 
+    parameterValue: 0
+  - sceneName: bio3_rec
+    eventReference:
+      Guid:
+        Data1: -2004669031
+        Data2: 1099015918
+        Data3: -1794116198
+        Data4: 1167571743
+      Path: event:/Outdoor Rec - MUS
+    parameterId: Coolness
+    parameterValue: 0
+  - sceneName: junction
+    eventReference:
+      Guid:
+        Data1: -1109145679
+        Data2: 1117746803
+        Data3: -1589385541
+        Data4: -1441782373
+      Path: event:/Quarters_Ambience
+    parameterId: 
+    parameterValue: 0
+  - sceneName: junction_bio1
+    eventReference:
+      Guid:
+        Data1: 252235198
+        Data2: 1306109479
+        Data3: 142916518
+        Data4: 1418243016
+      Path: event:/Wind_High_Pitch
+    parameterId: 
+    parameterValue: 0
+  - sceneName: junction_bio2
+    eventReference:
+      Guid:
+        Data1: 252235198
+        Data2: 1306109479
+        Data3: 142916518
+        Data4: 1418243016
+      Path: event:/Wind_High_Pitch
+    parameterId: 
+    parameterValue: 0
+  - sceneName: junction_bio3
+    eventReference:
+      Guid:
+        Data1: 252235198
+        Data2: 1306109479
+        Data3: 142916518
+        Data4: 1418243016
+      Path: event:/Wind_High_Pitch
+    parameterId: 
+    parameterValue: 0
+  - sceneName: junction_rec
+    eventReference:
+      Guid:
+        Data1: -2004669031
+        Data2: 1099015918
+        Data3: -1794116198
+        Data4: 1167571743
+      Path: event:/Outdoor Rec - MUS
+    parameterId: Coolness
+    parameterValue: 0
+  - sceneName: lab
+    eventReference:
+      Guid:
+        Data1: 1456198502
+        Data2: 1220028731
+        Data3: 1486530709
+        Data4: -1251258641
+      Path: event:/Cave_Ambience 2
+    parameterId: 
+    parameterValue: 0
+  - sceneName: lab_power
+    eventReference:
+      Guid:
+        Data1: -2004625072
+        Data2: 1091533033
+        Data3: -1088730212
+        Data4: -213219064
+      Path: event:/Ominous Drone - MUS
+    parameterId: Intensity
+    parameterValue: 0
+  - sceneName: landing
+    eventReference:
+      Guid:
+        Data1: -501566268
+        Data2: 1098867621
+        Data3: -931192703
+        Data4: -377282072
+      Path: event:/Warehouse_Ambience
+    parameterId: 
+    parameterValue: 0
+  - sceneName: landing_suite
+    eventReference:
+      Guid:
+        Data1: 845964718
+        Data2: 1257193003
+        Data3: 2029258896
+        Data4: 1201713124
+      Path: event:/Sci_Fi_Scary_Ambience
+    parameterId: 
+    parameterValue: 0
+  - sceneName: power
+    eventReference:
+      Guid:
+        Data1: -2004625072
+        Data2: 1091533033
+        Data3: -1088730212
+        Data4: -213219064
+      Path: event:/Ominous Drone - MUS
+    parameterId: Intensity
+    parameterValue: 1
+  - sceneName: rec
+    eventReference:
+      Guid:
+        Data1: -2004669031
+        Data2: 1099015918
+        Data3: -1794116198
+        Data4: 1167571743
+      Path: event:/Outdoor Rec - MUS
+    parameterId: Coolness
+    parameterValue: 1
+  - sceneName: security
     eventReference:
       Guid:
         Data1: 1786299830
@@ -81,5 +221,25 @@ MonoBehaviour:
         Data3: -1209102150
         Data4: 2019779316
       Path: event:/Biosphere 2 - MUS
+    parameterId: 
+    parameterValue: 0
+  - sceneName: suite
+    eventReference:
+      Guid:
+        Data1: 845964718
+        Data2: 1257193003
+        Data3: 2029258896
+        Data4: 1201713124
+      Path: event:/Sci_Fi_Scary_Ambience
+    parameterId: 
+    parameterValue: 0
+  - sceneName: suite_power
+    eventReference:
+      Guid:
+        Data1: -2004625072
+        Data2: 1091533033
+        Data3: -1088730212
+        Data4: -213219064
+      Path: event:/Ominous Drone - MUS
     parameterId: Intensity
     parameterValue: 0
