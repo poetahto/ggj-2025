@@ -141,7 +141,7 @@ namespace DefaultNamespace
         private IEnumerator LoadSceneAtWarp(string targetScene, string targetId)
         {
             yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
-            yield return new WaitForSecondsRealtime(0.5f); // allow things to initialize
+            yield return new WaitForSecondsRealtime(1); // allow things to initialize
         }
 
         private IEnumerator InitializeScene(string targetScene, string targetId)

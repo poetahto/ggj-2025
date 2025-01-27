@@ -5,7 +5,7 @@
 			<value>Sci_Fi_Bleep</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -119,7 +119,6 @@
 	<object class="MixerBusEffectChain" id="{f1f37c55-1006-4a06-bca3-16bb472ddfef}">
 		<relationship name="effects">
 			<destination>{8d0bfe3e-ad0f-42a6-824c-08116f9b8ff2}</destination>
-			<destination>{d9da3ff1-96e5-4db5-9bfb-646ab4dc70b2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6780d3b2-1aa5-4d0d-9189-5ee287957d1a}" />
@@ -147,7 +146,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{0449e297-a289-4971-b7fe-1ef922474527}" />
 	<object class="MixerBusFader" id="{8d0bfe3e-ad0f-42a6-824c-08116f9b8ff2}" />
-	<object class="SpatialiserEffect" id="{d9da3ff1-96e5-4db5-9bfb-646ab4dc70b2}" />
 	<object class="AutomationPoint" id="{e85e0804-f878-41fc-88c9-7672cfd34a52}">
 		<property name="position">
 			<value>0.016</value>

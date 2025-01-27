@@ -5,7 +5,7 @@
 			<value>Robot_Recharge</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{3ec31295-7761-4286-b575-d9ea40a77ad6}">
 		<relationship name="effects">
 			<destination>{4ba36b81-2b80-43ff-8783-e6a23054aa56}</destination>
-			<destination>{5d24f4a6-c8e4-46bf-96eb-47debabc5a13}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e82239fd-1f1b-49c5-8199-836b5512d898}" />
@@ -128,6 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{6786fea6-60cd-4499-990b-c342aad938f6}" />
 	<object class="MixerBusFader" id="{4ba36b81-2b80-43ff-8783-e6a23054aa56}" />
-	<object class="SpatialiserEffect" id="{5d24f4a6-c8e4-46bf-96eb-47debabc5a13}" />
 	<object class="MixerBusFader" id="{b6f6861b-a9f0-4817-a2e5-9164548a5578}" />
 </objects>

@@ -5,7 +5,7 @@
 			<value>Sci_Fi_Door</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -98,7 +98,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{361ad643-b898-459e-b596-d48cbc6c5443}">
 		<property name="volume">
-			<value>-4.5</value>
+			<value>-5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{471100b7-8a50-4db1-a763-9882a2f14234}">
 		<relationship name="effects">
 			<destination>{02cc7db4-98cb-4879-aa33-514c27bc2001}</destination>
-			<destination>{d296109e-689b-4798-9196-989f060b5778}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{68bf2317-b531-43f9-8702-d47cfaea170f}" />
@@ -128,10 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{bf61df31-14a5-403c-b066-923ffc171b3e}" />
 	<object class="MixerBusFader" id="{02cc7db4-98cb-4879-aa33-514c27bc2001}" />
-	<object class="SpatialiserEffect" id="{d296109e-689b-4798-9196-989f060b5778}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{1be8a7f4-71bc-4ca1-8378-c72e37d32f9d}" />
 </objects>

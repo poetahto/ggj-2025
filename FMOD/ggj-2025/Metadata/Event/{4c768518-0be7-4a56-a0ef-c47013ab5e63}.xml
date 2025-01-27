@@ -5,7 +5,7 @@
 			<value>Robot_Health_2</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{98d359ba-276f-4bd0-9997-04d1a7cc4e47}">
 		<relationship name="effects">
 			<destination>{de999ff7-7095-4685-822e-3a35d2e0c6b4}</destination>
-			<destination>{80faa802-15a7-4d0b-b43a-ce409a7b267f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{fb9efd92-9dd5-4657-9e90-64b7b632cec3}" />
@@ -128,6 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{4070ffd7-3920-4a55-baaf-0667da41ae59}" />
 	<object class="MixerBusFader" id="{de999ff7-7095-4685-822e-3a35d2e0c6b4}" />
-	<object class="SpatialiserEffect" id="{80faa802-15a7-4d0b-b43a-ce409a7b267f}" />
 	<object class="MixerBusFader" id="{1d8c3009-ee8a-414f-90b5-b4f6613c09c2}" />
 </objects>

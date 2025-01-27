@@ -628,7 +628,7 @@ MonoBehaviour:
   bsod: {fileID: 5432366629746381530}
   sceneMusic: {fileID: 11400000, guid: 81e76c01d61a2124b8059afce725a490, type: 2}
   fadeScreen: {fileID: 429135664724237899}
-  fadeDuration: 1
+  fadeDuration: 0.5
   musicFade: 1.5
   deathModel: {fileID: 4253697983581155634, guid: c8d796e5dcd11974e94d932171ef5be8, type: 3}
   textBox: {fileID: 3547215882571341020}

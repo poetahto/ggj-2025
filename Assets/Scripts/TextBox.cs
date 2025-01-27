@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using TMPro;
 using UnityEngine;
 
@@ -53,6 +54,7 @@ namespace DefaultNamespace
 
             while (display.maxVisibleCharacters < text.Length)
             {
+                RuntimeManager.PlayOneShot("event:/Sci_Fi_Bleep");
                 display.maxVisibleCharacters++;
                 yield return _characterDelay;
             }
