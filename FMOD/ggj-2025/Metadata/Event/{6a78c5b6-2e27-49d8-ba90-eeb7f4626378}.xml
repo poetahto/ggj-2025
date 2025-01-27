@@ -190,7 +190,7 @@
 			<value>139.63637188208617</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{37e94de2-4cfb-4209-9fc8-5b66ce22f36d}</destination>
+			<destination>{77c10165-9f16-4a17-9492-782df10cfb36}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5debb066-d945-4a1d-9c67-7906907592c8}">
@@ -285,7 +285,7 @@
 			<value>139.63637188208617</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{575260c3-9374-45d7-95c3-06d020a485cb}</destination>
+			<destination>{f3a9c266-6559-4a9a-857d-35302c34bc93}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{9635b5e5-fb57-4fdb-ae1a-469015d122a1}">
