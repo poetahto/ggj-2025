@@ -1,6 +1,9 @@
 ﻿using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 namespace DefaultNamespace
 {
@@ -49,15 +52,20 @@ namespace DefaultNamespace
         private IEnumerator DeathCoroutine()
         {
             float remaining = pauseDurationPostDeath;
+            EventInstance instance = RuntimeManager.CreateInstance("snapshot:/Glitch");
+            instance.start();
 
             while (remaining >= 0)
             {
                 float t = 1 - remaining / pauseDurationPostDeath;
                 Time.timeScale = Mathf.Lerp(1, 0, t);
                 remaining -= Time.unscaledDeltaTime;
+                Shader.SetGlobalFloat("_GlitchProgress", t);
+                instance.setVolume(t);
                 yield return null;
             }
-            
+
+            instance.stop(STOP_MODE.ALLOWFADEOUT);
             GlobalState.GetInstance().Respawn();
         }
     }

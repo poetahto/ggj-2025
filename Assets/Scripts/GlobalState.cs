@@ -18,6 +18,7 @@ namespace DefaultNamespace
     
     public class GlobalState : MonoBehaviour
     {
+        [SerializeField] private GameObject bsod;
         [SerializeField] private SceneMusic sceneMusic;
         [SerializeField] private CanvasGroup fadeScreen;
         [SerializeField] private float fadeDuration = 5;
@@ -58,6 +59,9 @@ namespace DefaultNamespace
 
         private IEnumerator RespawnCoroutine()
         {
+            _musicInstance.stop(STOP_MODE.ALLOWFADEOUT);
+            _musicInstance.release();
+            _musicInfo = null;
             IsTransitioning = true;
             GameObject player = GameObject.FindWithTag("Player");
             DeathInfo deathInfo = new DeathInfo {
@@ -65,13 +69,14 @@ namespace DefaultNamespace
                 SceneName = player.scene.name,
             };
             _deathInfo.Add(deathInfo);
+            bsod.SetActive(true);
             textBox.Hide();
-            yield return StartCoroutine(FadeTo(1));
             Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
+            yield return new WaitForSeconds(2);
             EnergyCount = 5;
             OnRefillEnergy?.Invoke();
-            yield return StartCoroutine(FadeTo(0));
+            bsod.SetActive(false);
             
             // play spawn animation
             WarpLocation warp = GetWarpLocation(RespawnId);
