@@ -33,7 +33,7 @@ namespace DefaultNamespace
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
 
-        public int ProgressCounter { get; set; } = 2;
+        public int ProgressCounter { get; set; }
         public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
         public int EnergyCount { get; private set; } = 5;

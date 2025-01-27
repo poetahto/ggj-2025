@@ -74,5 +74,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/suite_power.unity
     guid: 0babb7ff5971ac148a3dee82af38fd10
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 0d10c655f289c7e49bf406be66234f8a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3b188e121409bb843b29f0e60cda57e9, type: 3}
