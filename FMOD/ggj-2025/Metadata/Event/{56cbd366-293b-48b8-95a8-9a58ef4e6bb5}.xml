@@ -5,7 +5,7 @@
 			<value>Cave_Ambience 2</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -130,7 +130,6 @@
 	<object class="MixerBusEffectChain" id="{d56e91c9-53d3-455e-a5d2-7ae00a06b16a}">
 		<relationship name="effects">
 			<destination>{d1a8cb59-d57a-4f12-a99e-2d197a1e6f1e}</destination>
-			<destination>{f101def3-1453-474c-b16d-f155dca49e62}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{65bec27a-22ba-48b1-aafe-89bc131c329c}" />
@@ -142,6 +141,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{18f22aff-52e5-4aad-bab6-ac6e70e8841a}" />
 	<object class="MixerBusFader" id="{d1a8cb59-d57a-4f12-a99e-2d197a1e6f1e}" />
-	<object class="SpatialiserEffect" id="{f101def3-1453-474c-b16d-f155dca49e62}" />
 	<object class="MixerBusFader" id="{701ced9b-0cb3-4274-9846-6701024b747a}" />
 </objects>

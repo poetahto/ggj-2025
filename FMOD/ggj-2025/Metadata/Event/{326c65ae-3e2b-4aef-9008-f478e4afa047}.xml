@@ -5,7 +5,7 @@
 			<value>Sci_Fi_Scary_Ambience</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -171,7 +171,6 @@
 	<object class="MixerBusEffectChain" id="{9890f8d8-40f8-41bd-9fbe-cf78f3e9646c}">
 		<relationship name="effects">
 			<destination>{acbb9c58-b4cb-4c9a-ae52-2220f88552df}</destination>
-			<destination>{9a1cce59-92b8-435f-a8c0-1543088e807e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{77eb755d-b6d3-46f8-a25c-296e21a2cbda}" />
@@ -216,7 +215,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{acbb9c58-b4cb-4c9a-ae52-2220f88552df}" />
-	<object class="SpatialiserEffect" id="{9a1cce59-92b8-435f-a8c0-1543088e807e}" />
 	<object class="AutomationPoint" id="{6ff826e1-4129-4e84-bc21-5c909ac8f462}">
 		<property name="position">
 			<value>0</value>

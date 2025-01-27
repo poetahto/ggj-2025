@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 namespace DefaultNamespace
@@ -16,18 +18,22 @@ namespace DefaultNamespace
     
     public class GlobalState : MonoBehaviour
     {
+        [SerializeField] private GameObject bsod;
         [SerializeField] private SceneMusic sceneMusic;
         [SerializeField] private CanvasGroup fadeScreen;
         [SerializeField] private float fadeDuration = 5;
         [SerializeField] private float musicFade = 3;
+        [SerializeField] private GameObject deathModel;
         public TextBox textBox;
 
         private EventInstance _musicInstance;
         private SceneMusic.Info _musicInfo;
+        private List<DeathInfo> _deathInfo = new List<DeathInfo>();
 
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
 
+        public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
         public int EnergyCount { get; private set; } = 5;
         public bool IsTransitioning { get; set; }
@@ -53,17 +59,30 @@ namespace DefaultNamespace
 
         private IEnumerator RespawnCoroutine()
         {
+            _musicInstance.stop(STOP_MODE.ALLOWFADEOUT);
+            _musicInstance.release();
+            _musicInfo = null;
             IsTransitioning = true;
+            GameObject player = GameObject.FindWithTag("Player");
+            DeathInfo deathInfo = new DeathInfo {
+                Position = player.transform.position,
+                SceneName = player.scene.name,
+            };
+            _deathInfo.Add(deathInfo);
+            bsod.SetActive(true);
             textBox.Hide();
-            yield return StartCoroutine(FadeTo(1));
             Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
+            yield return new WaitForSeconds(2);
+            yield return StartCoroutine(InitializeScene(RespawnScene, RespawnId));
             EnergyCount = 5;
             OnRefillEnergy?.Invoke();
-            yield return StartCoroutine(FadeTo(0));
+            bsod.SetActive(false);
             
             // play spawn animation
             WarpLocation warp = GetWarpLocation(RespawnId);
+            textBox.SetText($"Fabricated B.A.R.T. Model {DeathCount + 2}", 1);
+            DeathCount++;
 
             if (warp != null && warp.HasWarpCutscene())
             {
@@ -81,6 +100,7 @@ namespace DefaultNamespace
             textBox.Hide();
             yield return StartCoroutine(FadeTo(1));
             yield return StartCoroutine(LoadSceneAtWarp(targetScene, targetId));
+            yield return StartCoroutine(InitializeScene(targetScene, targetId));
             yield return StartCoroutine(FadeTo(0));
 
             // pop a bubble after a little bit
@@ -117,7 +137,6 @@ namespace DefaultNamespace
         {
             yield return SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Single);
             yield return null; // allow things to initialize
-            yield return StartCoroutine(InitializeScene(targetScene, targetId));
         }
 
         private IEnumerator InitializeScene(string targetScene, string targetId)
@@ -179,6 +198,16 @@ namespace DefaultNamespace
                 Quaternion rot = warp.transform.rotation;
                 player.transform.SetPositionAndRotation(pos, rot);
             }
+            
+            // spawn bodies
+            foreach (DeathInfo deathInfo in _deathInfo)
+            {
+                if (deathInfo.SceneName == targetScene)
+                {
+                    GameObject instance = Instantiate(deathModel, deathInfo.Position, Quaternion.Euler(0, Random.Range(0, 360), 0));
+                    instance.transform.localScale = player.transform.lossyScale;
+                }
+            }
         }
         
         private static WarpLocation GetWarpLocation(string id)
@@ -212,6 +241,12 @@ namespace DefaultNamespace
             }
             
             return _instance;
+        }
+
+        public class DeathInfo
+        {
+            public string SceneName;
+            public Vector3 Position;
         }
     }
 }

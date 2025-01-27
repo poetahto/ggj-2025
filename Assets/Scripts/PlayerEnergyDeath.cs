@@ -1,6 +1,9 @@
 ﻿using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 namespace DefaultNamespace
 {
@@ -55,9 +58,11 @@ namespace DefaultNamespace
                 float t = 1 - remaining / pauseDurationPostDeath;
                 Time.timeScale = Mathf.Lerp(1, 0, t);
                 remaining -= Time.unscaledDeltaTime;
+                Shader.SetGlobalFloat("_GlitchProgress", t);
                 yield return null;
             }
-            
+
+            Shader.SetGlobalFloat("_GlitchProgress", 0);
             GlobalState.GetInstance().Respawn();
         }
     }

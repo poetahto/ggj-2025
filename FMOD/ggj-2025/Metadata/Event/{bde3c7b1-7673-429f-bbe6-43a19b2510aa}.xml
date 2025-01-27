@@ -5,7 +5,7 @@
 			<value>Quarters_Ambience</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -136,7 +136,6 @@
 	<object class="MixerBusEffectChain" id="{58021891-b4ed-4ed6-a93a-420988623f33}">
 		<relationship name="effects">
 			<destination>{7a40d0b7-2b50-4e9a-81d3-d3c2f5975cf6}</destination>
-			<destination>{dbd302f3-911c-4673-a322-f8626fde2291}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{973b2470-2c82-4002-8f65-ae9d596bfdb8}" />
@@ -148,6 +147,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{2e184145-c521-4c65-8a66-3e88419e2a8f}" />
 	<object class="MixerBusFader" id="{7a40d0b7-2b50-4e9a-81d3-d3c2f5975cf6}" />
-	<object class="SpatialiserEffect" id="{dbd302f3-911c-4673-a322-f8626fde2291}" />
 	<object class="MixerBusFader" id="{e0d176ef-414a-4562-8334-f0e51fa97d1b}" />
 </objects>
