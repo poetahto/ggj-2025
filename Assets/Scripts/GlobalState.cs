@@ -15,7 +15,7 @@ namespace DefaultNamespace
     {
         Intro, Playing,
     }
-    
+
     public class GlobalState : MonoBehaviour
     {
         [SerializeField] private GameObject bsod;
@@ -33,6 +33,7 @@ namespace DefaultNamespace
         public event Action OnUseEnergy;
         public event Action OnRefillEnergy;
 
+        public int ProgressCounter { get; set; }
         public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
         public int EnergyCount { get; private set; } = 5;
