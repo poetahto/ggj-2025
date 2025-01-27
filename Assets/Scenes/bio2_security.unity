@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.10188681, g: 0.10188681, b: 0.10188681, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -6910,6 +6910,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7142682777612928873, guid: ab07e22b90fa22a499f6899bdeaba94c, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142682777612928873, guid: ab07e22b90fa22a499f6899bdeaba94c, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142682777612928873, guid: ab07e22b90fa22a499f6899bdeaba94c, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142682777612928873, guid: ab07e22b90fa22a499f6899bdeaba94c, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10018,6 +10034,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.b
+      value: 0.07317255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.g
+      value: 0.104309805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.r
+      value: 0.397
+      objectReference: {fileID: 0}
     - target: {fileID: 8173474072984449687, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
       propertyPath: m_Name
       value: blinking red light
@@ -10074,6 +10102,18 @@ PrefabInstance:
     - target: {fileID: 3432267163476593935, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.b
+      value: 0.07317255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.g
+      value: 0.104309805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.r
+      value: 0.397
       objectReference: {fileID: 0}
     - target: {fileID: 8173474072984449687, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
       propertyPath: m_Name
@@ -11158,6 +11198,18 @@ PrefabInstance:
     - target: {fileID: 3432267163476593935, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.b
+      value: 0.07317255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.g
+      value: 0.104309805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644789744937424586, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
+      propertyPath: m_Color.r
+      value: 0.397
       objectReference: {fileID: 0}
     - target: {fileID: 8173474072984449687, guid: 43e46a1de0526a54fb429301d5838875, type: 3}
       propertyPath: m_Name

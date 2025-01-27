@@ -5,7 +5,7 @@
 			<value>Robot_Death_Screen</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -139,7 +139,6 @@
 	<object class="MixerBusEffectChain" id="{b7f34bce-adc3-4d84-b891-460a146f0515}">
 		<relationship name="effects">
 			<destination>{aca602d9-fd3b-45c6-85cf-dd829fc5c031}</destination>
-			<destination>{35dfd2c0-afc2-4ae1-add7-83b3c74266bd}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{38833647-b8d6-43e2-a7f3-e0369d5c7d0d}" />
@@ -168,7 +167,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{850c1cef-25bf-4c81-a6ab-667a122ceb5f}" />
 	<object class="MixerBusFader" id="{aca602d9-fd3b-45c6-85cf-dd829fc5c031}" />
-	<object class="SpatialiserEffect" id="{35dfd2c0-afc2-4ae1-add7-83b3c74266bd}" />
 	<object class="AutomationPoint" id="{96191452-809a-4c97-90a2-cf0587459ab7}">
 		<property name="position">
 			<value>1.9000000000000001</value>

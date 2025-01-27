@@ -36,7 +36,7 @@ namespace DefaultNamespace
         public int ProgressCounter { get; set; }
         public int DeathCount { get; set; }
         public GameState GameState { get; set; } = GameState.Intro;
-        public int EnergyCount { get; private set; } = 5;
+        public int EnergyCount { get; private set; } = 1;
         public bool IsTransitioning { get; set; }
         public string RespawnScene { get; set; } = "bio1";
         public string RespawnId { get; set; } = "Bio1Respawn";
@@ -50,6 +50,13 @@ namespace DefaultNamespace
         {
             if (RespawnScene != string.Empty && RespawnId != string.Empty && !IsTransitioning)
                 StartCoroutine(RespawnCoroutine());
+        }
+
+        public void RefillPower()
+        {
+            OnRefillEnergy?.Invoke();
+            EnergyCount = 5;
+            RuntimeManager.PlayOneShot("event:/Robot_Recharge");
         }
 
         public void Warp(string targetScene, string targetId)
@@ -74,11 +81,16 @@ namespace DefaultNamespace
             textBox.Hide();
             Time.timeScale = 1;
             yield return StartCoroutine(LoadSceneAtWarp(RespawnScene, RespawnId));
-            yield return new WaitForSeconds(2);
+            RuntimeManager.PlayOneShot("event:/Computer_Boot_Up");
+            yield return new WaitForSeconds(1.64f);
+            fadeScreen.alpha = 1;
+            bsod.SetActive(false);
             yield return StartCoroutine(InitializeScene(RespawnScene, RespawnId));
+            yield return new WaitForSeconds(2.0f);
+            // fadeScreen.alpha = 0; 
+            StartCoroutine(FadeTo(0));
             EnergyCount = 5;
             OnRefillEnergy?.Invoke();
-            bsod.SetActive(false);
             player = GameObject.FindWithTag("Player");
             
             // play spawn animation

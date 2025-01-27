@@ -34,20 +34,18 @@ namespace DefaultNamespace
                     textBox.SetText("Energy refilled.", 1);
                     break;
                 case 3:
-                    textBox.SetText("Energy: 75%", 1);
+                    textBox.SetText("Energy: 50%", 1);
                     RuntimeManager.PlayOneShot("event:/Robot_Health_1");
                     break;
                 case 2:
-                    textBox.SetText("Energy: 50%", 1);
                     RuntimeManager.PlayOneShot("event:/Robot_Health_2");
                     break;
                 case 1:
-                    textBox.SetText("Energy: 25%", 1);
+                    textBox.SetText("Energy: Critical", 1);
                     RuntimeManager.PlayOneShot("event:/Robot_Health_3");
                     break;
                 case <= 0:
                     RuntimeManager.PlayOneShot("event:/Robot_Health_4");
-                    textBox.SetText("Energy: Critical", 1);
                     StartCoroutine(DeathCoroutine());
                     break;
             }

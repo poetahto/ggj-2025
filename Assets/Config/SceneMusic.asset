@@ -176,11 +176,11 @@ MonoBehaviour:
   - sceneName: landing
     eventReference:
       Guid:
-        Data1: -501566268
-        Data2: 1098867621
-        Data3: -931192703
-        Data4: -377282072
-      Path: event:/Warehouse_Ambience
+        Data1: 845964718
+        Data2: 1257193003
+        Data3: 2029258896
+        Data4: 1201713124
+      Path: event:/Sci_Fi_Scary_Ambience
     parameterId: 
     parameterValue: 0
   - sceneName: landing_suite
