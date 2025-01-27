@@ -104,11 +104,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: FullScreenPassRendererFeature
   m_EditorClassIdentifier: 
-  m_Active: 0
-  injectionPoint: 450
+  m_Active: 1
+  injectionPoint: 600
   fetchColorBuffer: 1
-  requirements: 1
-  passMaterial: {fileID: 2100000, guid: 745ff26e9983cd6f8b73b221dcbe65e4, type: 2}
+  requirements: 0
+  passMaterial: {fileID: 2100000, guid: daaec848c80964e43bfd11d9c76e2be1, type: 2}
   passIndex: 0
   bindDepthStencilAttachment: 0
   m_Version: 1
