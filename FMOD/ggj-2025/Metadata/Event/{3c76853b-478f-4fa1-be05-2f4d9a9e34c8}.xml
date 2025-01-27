@@ -5,7 +5,7 @@
 			<value>Rubble_Clearing</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -98,7 +98,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{bdb4cd91-7120-4ba1-a03e-982ce6770fd7}">
 		<property name="volume">
-			<value>-3.5</value>
+			<value>-5.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -119,7 +119,11 @@
 			<destination>{e77459c1-b06e-400a-87bb-bead019888af}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{03c7433d-09ed-4460-ae21-9387d5430740}" />
+	<object class="MixerBusPanner" id="{03c7433d-09ed-4460-ae21-9387d5430740}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{3648a68f-1ecf-4836-835b-5905a2a10f1c}" />
 	<object class="MixerBusEffectChain" id="{2febf3e8-c30d-4172-bc32-d0fb62d9fad2}">
 		<relationship name="effects">
