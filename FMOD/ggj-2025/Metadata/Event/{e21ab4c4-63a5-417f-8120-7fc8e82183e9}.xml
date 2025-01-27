@@ -5,7 +5,7 @@
 			<value>Warehouse_Ambience</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{957caebe-940e-4f19-8fbc-755d4867c990}</destination>
@@ -171,7 +171,6 @@
 	<object class="MixerBusEffectChain" id="{34eb2bb0-04f2-4ae1-9d67-88dc1790c0e7}">
 		<relationship name="effects">
 			<destination>{670a214b-786f-46be-aa57-8e96c55e37be}</destination>
-			<destination>{a4545d37-6010-4b52-ac16-9eb8a2a60345}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{af7a9eb5-1afc-4f9b-b145-ecdedd780a05}" />
@@ -216,7 +215,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{670a214b-786f-46be-aa57-8e96c55e37be}" />
-	<object class="SpatialiserEffect" id="{a4545d37-6010-4b52-ac16-9eb8a2a60345}" />
 	<object class="AutomationPoint" id="{ec221818-2f9f-44ae-8f6a-4f01af416012}">
 		<property name="position">
 			<value>0</value>
