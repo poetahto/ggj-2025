@@ -45,6 +45,12 @@ EditorBuildSettings:
     path: Assets/Scenes/junction_bio3.unity
     guid: 7ba397412411b8045bbd3567a6cd0894
   - enabled: 1
+    path: Assets/Scenes/credits_stay.unity
+    guid: 096af95de1b00fb4d941a6ed82dc6c5b
+  - enabled: 1
+    path: Assets/Scenes/credits_leave.unity
+    guid: cc0fc10cb8799274fba0be46e10a4a4e
+  - enabled: 1
     path: Assets/Scenes/junction_rec.unity
     guid: beee4790ac316bc49b3ad321aa0fcde2
   - enabled: 1

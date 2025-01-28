@@ -245,6 +245,13 @@ namespace DefaultNamespace
                 }
             }
         }
+
+        public IEnumerator LoadCredits(string creditScene)
+        {
+            yield return StartCoroutine(FadeTo(1));
+            yield return SceneManager.LoadSceneAsync(creditScene, LoadSceneMode.Single);
+            yield return StartCoroutine(FadeTo(0));
+        }
         
         private static WarpLocation GetWarpLocation(string id)
         {
