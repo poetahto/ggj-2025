@@ -176,11 +176,11 @@ MonoBehaviour:
   - sceneName: landing
     eventReference:
       Guid:
-        Data1: 845964718
-        Data2: 1257193003
-        Data3: 2029258896
-        Data4: 1201713124
-      Path: event:/Sci_Fi_Scary_Ambience
+        Data1: -444752287
+        Data2: 1231350423
+        Data3: -1019285339
+        Data4: 249809164
+      Path: event:/Mood
     parameterId: 
     parameterValue: 0
   - sceneName: landing_suite
@@ -226,12 +226,12 @@ MonoBehaviour:
   - sceneName: suite
     eventReference:
       Guid:
-        Data1: 845964718
-        Data2: 1257193003
-        Data3: 2029258896
-        Data4: 1201713124
-      Path: event:/Sci_Fi_Scary_Ambience
-    parameterId: 
+        Data1: -2004625072
+        Data2: 1091533033
+        Data3: -1088730212
+        Data4: -213219064
+      Path: event:/Ominous Drone - MUS
+    parameterId: Intensity
     parameterValue: 0
   - sceneName: suite_power
     eventReference:
@@ -242,4 +242,4 @@ MonoBehaviour:
         Data4: -213219064
       Path: event:/Ominous Drone - MUS
     parameterId: Intensity
-    parameterValue: 0
+    parameterValue: 0.5

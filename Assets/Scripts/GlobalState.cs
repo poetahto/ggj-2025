@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -26,7 +27,7 @@ namespace DefaultNamespace
         [SerializeField] private GameObject deathModel;
         public TextBox textBox;
 
-        private EventInstance _musicInstance;
+        public EventInstance _musicInstance;
         private SceneMusic.Info _musicInfo;
         private List<DeathInfo> _deathInfo = new List<DeathInfo>();
 

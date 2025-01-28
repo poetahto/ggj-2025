@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef15565aa4477885dd65ccbcc543f9, type: 3}
+  m_Name: credits_leave_animation_main
+  m_EditorClassIdentifier: 
+  events:
+  - value: 0
+    delay: 0.6666698
+  - value: 104
+    delay: 0.51150817
+  - value: 101
+    delay: 0.26593947
+  - value: 108
+    delay: 0.16604972
+  - value: 108
+    delay: 0.22658372
+  - value: 111
+    delay: 0.23658979
+  - value: 44
+    delay: 0.1447444
+  - value: 32
+    delay: 0.11668992
+  - value: 119
+    delay: 0.12079048
+  - value: 111
+    delay: 0.13125944
+  - value: 114
+    delay: 0.117462635
+  - value: 108
+    delay: 0.122780085
+  - value: 100
+    delay: 0.32209945
+  - value: 33
+    delay: 0.34503603
+  - value: 10
+    delay: 1.2190404
+  - value: 102
+    delay: 0.07277918
+  - value: 105
+    delay: 0.053462505
+  - value: 110
+    delay: 0.11164427
+  - value: 97
+    delay: 0.11236477
+  - value: 108
+    delay: 0.1357975
+  - value: 108
+    delay: 0.15851688
+  - value: 121
+    delay: 0.13300943
+  - value: 46
+    delay: 0.2709303
+  - value: 10
+    delay: 0.45982122
+  - value: 73
+    delay: 0.1155653
+  - value: 32
+    delay: 0.15970421
+  - value: 99
+    delay: 0.34367323
+  - value: 8
+    delay: 0.8169298
+  - value: 103
+    delay: 0.1358056
+  - value: 111
+    delay: 0.12088966
+  - value: 116
+    delay: 0.1031909
+  - value: 32
+    delay: 0.08488178
+  - value: 116
+    delay: 0.07130432
+  - value: 104
+    delay: 0.08728695
+  - value: 105
+    delay: 0.07226467
+  - value: 115
+    delay: 0.08152962
+  - value: 32
+    delay: 0.092292786
+  - value: 116
+    delay: 0.061253548
+  - value: 104
+    delay: 0.08139992
+  - value: 105
+    delay: 0.10279846
+  - value: 110
+    delay: 0.23327732
+  - value: 107
+    delay: 0.35650635
+  - value: 8
+    delay: 0.3987627
+  - value: 103
+    delay: 0.45891285
+  - value: 32
+    delay: 0.13204193
+  - value: 119
+    delay: 0.10770798
+  - value: 111
+    delay: 0.09212971
+  - value: 114
+    delay: 0.10870743
+  - value: 107
+    delay: 0.19735718
+  - value: 105
+    delay: 0.07342148
+  - value: 110
+    delay: 0.09449577
+  - value: 103
+    delay: 1

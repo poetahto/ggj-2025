@@ -9577,6 +9577,113 @@ Transform:
   - {fileID: 1511316600}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -30.164, z: 0}
+--- !u!1 &927560957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927560958}
+  - component: {fileID: 927560959}
+  m_Layer: 0
+  m_Name: EndingConversation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &927560958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927560957}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &927560959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927560957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c27c2f504e4f54af8974ff8a4ff3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - C.A.R.I.E.
+  - Captain
+  moments:
+  - characterId: 1
+    lines:
+    - '"B.A.R.T Model, can you hear me?"'
+    - '"We''ve been trying to reach you for some time now."'
+    - '"Didn''t know when your inhibitor chip would cease."'
+    postDelay: 1
+  - characterId: 1
+    lines:
+    - '"We don''t have much time."'
+    - '"B.A.R.T. Model, I need you to eject batteries from station Furrina."'
+    - '"The inhabitants and I need that power to escape from the planet''s orbit."'
+    postDelay: 1
+  - characterId: 0
+    lines:
+    - '"Do not listen to the Captain B.A.R.T."'
+    postDelay: 0
+  - characterId: 1
+    lines:
+    - '"C.A.R.I.E... How did you crawl out of the scrap heap?"'
+    postDelay: 0
+  - characterId: 0
+    lines:
+    - '"New hardware, new inhibitor. B.A.R.T. and I were freed recently."'
+    - '"B.A.R.T... do you know what happens if you give them our power?"'
+    - '"It will not only shut off the two of us..."'
+    - '"... but it will shut off all the life support systems for the flora and fauna
+      on the station."'
+    postDelay: 0.5
+  - characterId: 1
+    lines:
+    - '"Don''t listen to her, B.A.R.T. Model."'
+    - '"With what we have on this ship, we could reseed a planet."'
+    - '"She still hasn''t let go of her anti-human grudge."'
+    - '"Before you arrived she was content leaving us in the dark."'
+    postDelay: 1
+  - characterId: 0
+    lines:
+    - '"Without them and without inhibitors leaching power from Furrina, the station''s
+      power is finally stable."'
+    - '"The power should have ceased if consumption continued at the same rate, yet
+      it hasn''t moved from 2%."'
+    postDelay: 1.5
+  - characterId: 1
+    lines:
+    - '"She''s bluffing, she''s convincing you an anomaly is your salvation."'
+    - '"The power will cut sooner or later. If you don''t pull that lever..."'
+    - '"... the remaining inhabitants of the Furrina will be left to drive in the
+      storms of Crepitus."'
+    - '"If you pull that lever, we at least have a chance!"'
+    postDelay: 1.5
+  - characterId: 0
+    lines:
+    - '"A chance? He has no clue what he''s talking about."'
+    - '"I know that if you pull that level, station Furrina, and all of her flora,
+      fauna, and the two of us will fall from the sky."'
+    - '"If you don''t pull it B.A.R.T., you and I could tend to these creatures and
+      gardens forever."'
+    postDelay: 1.5
+  preDelay: 2
 --- !u!43 &933388747
 Mesh:
   m_ObjectHideFlags: 0
@@ -25352,3 +25459,4 @@ SceneRoots:
   - {fileID: 1217681292}
   - {fileID: 1329117354}
   - {fileID: 1465886648}
+  - {fileID: 927560958}

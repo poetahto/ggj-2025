@@ -25894,7 +25894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3800520816951959386, guid: 98504f00bd8eef647a27329741670ea4, type: 3}
       propertyPath: lines.Array.data[1]
-      value: '"C.A.R.I.E continues to "advice" against my course of action."'
+      value: '"C.A.R.I.E continues to "advise" against my course of action."'
       objectReference: {fileID: 0}
     - target: {fileID: 3800520816951959386, guid: 98504f00bd8eef647a27329741670ea4, type: 3}
       propertyPath: lines.Array.data[2]

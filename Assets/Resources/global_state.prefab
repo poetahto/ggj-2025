@@ -697,7 +697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A problem has been detected, connect to system no longer available.
+  m_text: 'A problem has been detected, connection to system no longer available.
 
 
     ERR_NO_PWR
